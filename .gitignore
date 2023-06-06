@@ -1,0 +1,12 @@
+node_modules
+public/upload
+public/assets
+public/backend
+public/frontend
+public/images
+vendor
+/.env
+storage
+storage/framework/sessions
+storage/framework/views
+tests
