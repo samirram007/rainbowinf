@@ -93,6 +93,8 @@
         #imageModalCenter #ModalImage {
             height: 80vh;
             max-width: 80% !important; 
+            border-radius: 5px;
+            box-shadow: 0 0 20px 10px #222222b0;
         }
         .from_left{
             animation: fromLeft 0.5s ease-in-out 1;
