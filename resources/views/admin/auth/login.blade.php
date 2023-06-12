@@ -97,7 +97,7 @@
         .img-left {
             width: 50%;
             height: 100%;
-            background: url('/images/rainbowlogin.jpg');
+            background: url('/images/rainbowlogin_admin.jpg');
             background-size: cover;
         }
 

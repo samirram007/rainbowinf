@@ -3,10 +3,13 @@ public/upload
 public/assets
 public/backend
 public/frontend
-public/images
+
 vendor
 /.env
 storage
 storage/framework/sessions
 storage/framework/views
 tests
+storage.zip
+node_modules.zip
+public.zip

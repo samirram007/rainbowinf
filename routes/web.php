@@ -212,7 +212,7 @@ Route::group(['middleware' => 'auth'], function () {
     
     Route::prefix('notice')->group(function () {
         //Employee Attendance Route
-        Route::get('/notice/view',         [NoticeController::class, 'NoticeIndex'])->name('notice.index');
+        Route::get('/',         [NoticeController::class, 'NoticeIndex'])->name('notice.index');
         Route::get('/notice/view',         [NoticeController::class, 'NoticeView'])->name('notice.view');
         Route::get('/notice/add',         [NoticeController::class, 'NoticeAdd'])->name('notice.add');
         Route::post('/notice/store',         [NoticeController::class, 'NoticeStore'])->name('store.notice');
@@ -275,7 +275,7 @@ Route::prefix('frontend')->group(function () {
     })->name('clients');
 
     Route::get('/equipments', function () {
-        return view('frontend.home');
+        return view('frontend.equipments');
     })->name('equipments');
 
     Route::get('/factory', function () {
@@ -372,6 +372,9 @@ Route::prefix('frontend')->group(function () {
     Route::get('/sr_vice_president_civil_architectural', function () {
         return view('frontend.sr_vice_president_civil_architectural');
     })->name('sr_vice_president_civil_architectural');
+    Route::get('/architectural', function () {
+        return view('frontend.projects.architectural');
+    })->name('architectural');
 
     Route::get('/vice_president_electrical', function () {
         return view('frontend.vice_president_electrical');

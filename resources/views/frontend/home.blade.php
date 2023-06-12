@@ -121,7 +121,7 @@
                                     <div class="scroll-to-section">
                                         <!--a href="{{route('civil_executive')}}" -->
                                         <button type="button" class=" btn btn-link text-light"
-                                            onclick="location.href = '{{ url(route('structural_project')) }}'">Read More
+                                            onclick="location.href = '{{ url(route('architectural')) }}'">Read More
                                         </button></a>
                                     </div>
                                 </div>

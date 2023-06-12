@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class NoticeController extends Controller
 {
-    public function GalleryView()
+    public function NoticeIndex()
     {
         
     }
