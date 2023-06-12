@@ -10,6 +10,4 @@ storage
 storage/framework/sessions
 storage/framework/views
 tests
-storage.zip
-node_modules.zip
-public.zip
+

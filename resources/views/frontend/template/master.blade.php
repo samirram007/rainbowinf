@@ -234,14 +234,23 @@
                     $("#next").attr('data-key', parseInt(thisImgKey) + 1);
                     $("#next").attr('data-all', $(this).attr('data-all'));
                     if (thisImgKey == 0) {
-                        $("#previous").hide();
+                        if($("#previous").hasClass('active')){
+                            $("#previous").removeClass('active');
+                        }
+                       // $("#previous").hide();
                     } else {
-                        $("#previous").show();
+                        if(!$("#previous").hasClass('active')){
+                            $("#previous").addClass('active');
+                        }
                     }
                     if (thisImgKey == all.length - 1) {
-                        $("#next").hide();
+                        if($("#next").hasClass('active')){
+                            $("#next").removeClass('active');
+                        }
                     } else {
-                        $("#next").show();
+                        if(!$("#next").hasClass('active')){
+                            $("#next").addClass('active');
+                        }
                     }
                     $("#imageModalCenter").show();
                 });
@@ -257,15 +266,32 @@
                     $("#ModalImage").attr('src', url);
                     $("#previous").attr('data-key', thisImgKey - 1);
                     $("#next").attr('data-key', parseInt(thisImgKey) + 1);
+                    $("#previous").addClass('feedback');
+                    if($("#ModalImage").hasClass('from_right')){
+                        $("#ModalImage").removeClass('from_right');
+                    } 
+                    $("#ModalImage").addClass('from_right');
+                    setTimeout(() => {
+                        $("#previous").removeClass('feedback');
+                        $("#ModalImage").removeClass('from_right');
+                    }, 500);
                     if (thisImgKey == 0) {
-                        $("#previous").hide();
+                        if($("#previous").hasClass('active')){
+                            $("#previous").removeClass('active');
+                        }
                     } else {
-                        $("#previous").show();
+                        if(!$("#previous").hasClass('active')){
+                            $("#previous").addClass('active');
+                        }
                     }
                     if (thisImgKey == all.length - 1) {
-                        $("#next").hide();
+                        if($("#next").hasClass('active')){
+                            $("#next").removeClass('active');
+                        }
                     } else {
-                        $("#next").show();
+                        if(!$("#next").hasClass('active')){
+                            $("#next").addClass('active');
+                        }
                     }
                 });
                 $("#next").click(function(e) {
@@ -280,15 +306,33 @@
                     $("#ModalImage").attr('src', url);
                     $("#previous").attr('data-key', thisImgKey - 1);
                     $("#next").attr('data-key', parseInt(thisImgKey) + 1);
+                    $("#next").addClass('feedback');
+                    if($("#ModalImage").hasClass('from_left')){
+                        $("#ModalImage").removeClass('from_left');
+                    } 
+                    $("#ModalImage").addClass('from_left');
+                    
+                    setTimeout(() => {
+                        $("#next").removeClass('feedback');
+                        $("#ModalImage").removeClass('from_left');
+                    }, 500);
                     if (thisImgKey == 0) {
-                        $("#previous").hide();
+                        if($("#previous").hasClass('active')){
+                            $("#previous").removeClass('active');
+                        }
                     } else {
-                        $("#previous").show();
+                        if(!$("#previous").hasClass('active')){
+                            $("#previous").addClass('active');
+                        }
                     }
                     if (thisImgKey == all.length - 1) {
-                        $("#next").hide();
+                        if($("#next").hasClass('active')){
+                            $("#next").removeClass('active');
+                        }
                     } else {
-                        $("#next").show();
+                        if(!$("#next").hasClass('active')){
+                            $("#next").addClass('active');
+                        }
                     }
                 });
             });

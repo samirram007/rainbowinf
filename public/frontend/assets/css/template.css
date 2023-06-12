@@ -1482,8 +1482,10 @@ section.gallery {
     background-size: cover;
     background-blend-mode: multiply; */
     border:none;
-    background-color: #f6f3f1;
-    padding: 120px 0px;
+    background-color: #7e736d36;
+     
+    
+    padding: 120px 10px;
     zoom: 0%;
     /* width: calc(100% - 10px); */
 }
