@@ -14,7 +14,7 @@ class MonthlySalaryController extends Controller
     public function MonthlySalaryView()
     {
         $data['collections'] = EmployeeSalaryLog::all();
-        dd($data['collections']);
+        //dd($data['collections']);
         return view('backend.employee.monthly_salary.monthly_salary_view', $data);
     }
     public function MonthlySalaryGet(Request $request)
@@ -75,9 +75,19 @@ class MonthlySalaryController extends Controller
 
     public function MonthlySalaryManage()
     {
-        $data['collections'] = User::where('usertype', 'Employee')->get();
-        // dd($data['allData']);
-        return view('backend.employee.monthly_salary.monthly_salary_manage', $data);
+        if(auth()->user()->role=='admin'){
+            $data['collections'] = User::where('usertype', 'Employee')->get();
+        
+            return view('backend.employee.monthly_salary.monthly_salary_manage', $data);
+        }
+        else if(auth()->user()->role=='employee'){
+            $user_id=auth()->user()->id;
+           
+            $data['collections'] =MonthlySalaryPdf::where('employee_id', $user_id)->orderBy('month_year', 'desc')->get();
+
+               return view('backend.employee.monthly_salary.employee_salary_index', $data); 
+            }
+       
     }
 
     public function show($id)

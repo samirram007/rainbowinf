@@ -62,7 +62,8 @@ class EmployeeRegistrationController extends Controller
             $code = rand(0000, 9999);
             $data->id_no = $final_id;
             $data->password = bcrypt($code);
-            $data->usertype = 'Employee';
+            $data->usertype = 'employee';
+            $data->role = 'employee';
             $data->code = $code;
             $data->name = $request->name;
             $data->father_name = $request->father_name;
@@ -120,7 +121,8 @@ class EmployeeRegistrationController extends Controller
     public function EmployeeUpdate(Request $request,$id)
     {
             $data = User::find($id);
-            $data->usertype = 'Employee';
+            $data->usertype = 'employee';
+            $data->role = 'employee';
             $data->name = $request->name;
             $data->id_no = $request->id_no;
             $data->father_name = $request->father_name;

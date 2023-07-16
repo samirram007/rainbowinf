@@ -197,8 +197,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
-        App\Providers\JetstreamServiceProvider::class,
-        Meneses\LaravelMpdf\LaravelMpdfServiceProvider::class,
+        App\Providers\JetstreamServiceProvider::class, 
         niklasravnsborg\LaravelPdf\PdfServiceProvider::class,
        
 
@@ -215,10 +214,8 @@ return [
     |
     */
 
-    'aliases' => Facade::defaultAliases()->merge([
-        // 'ExampleClass' => App\Example\ExampleClass::class,
-        'PDF' => Meneses\LaravelMpdf\Facades\LaravelMpdf::class,
-        'LPDF' => niklasravnsborg\LaravelPdf\Facades\Pdf::class,
+    'aliases' => Facade::defaultAliases()->merge([ 
+        'PDF' => niklasravnsborg\LaravelPdf\Facades\Pdf::class,
         'Image'=>Intervention\Image\Facades\Image::class,
     ])->toArray(),
 

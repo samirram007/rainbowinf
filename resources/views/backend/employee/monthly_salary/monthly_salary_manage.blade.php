@@ -89,7 +89,7 @@
         $(document).ready(function() {
             $('#search').on('click', function() {
                 var month = $('#month').val();
-                console.log(month);
+                //console.log(month);
                 $.ajax({
                     url: "{{ route('monthly.salary.search') }}",
                     type: "GET",

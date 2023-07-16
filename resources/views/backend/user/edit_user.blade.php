@@ -26,8 +26,9 @@
                                                             <select name="role" id="role" required=""
                                                                 class="form-control">
                                                                 <option value="">Select Role</option>
-                                                                <option value="Admin" {{$editData->role=='Admin'?'selected':''}}>Admin</option>
-                                                                <option value="Operator"{{$editData->role=='Operator'?'selected':''}}>Operator</option>
+                                                                <option value="Admin" {{$editData->role=='admin'?'selected':''}}>Admin</option>
+                                                                <option value="Operator"{{$editData->role=='operator'?'selected':''}}>Operator</option>
+                                                                <option value="Operator"{{$editData->role=='employee'?'selected':''}}>Employee</option>
                                                             </select>
                                                         </div>
                                                     </div>
