@@ -191,7 +191,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/news/edit/{id}',         [NewsController::class, 'NewsEdit'])->name('news.edit');
         Route::get('/news/single/{id}',         [NewsController::class, 'NewsEdit'])->name('news.single');
         Route::post('/news/update/{id}',         [NewsController::class, 'NewsUpdate'])->name('update.news');
-        Route::get('/news/delete/{id}',         [NewsController::class, 'NewsDetails'])->name('news.delete');
+        Route::get('/news/delete/{id}',         [NewsController::class, 'NewsDelete'])->name('news.delete');
     });
 
     Route::prefix('gallery')->group(function () {
@@ -211,15 +211,15 @@ Route::group(['middleware' => 'auth'], function () {
     });
     
     Route::prefix('notice')->group(function () {
-        //Employee Attendance Route
-        Route::get('/',         [NoticeController::class, 'NoticeIndex'])->name('notice.index');
+        //Notice Route
+        Route::get('/notice',         [NoticeController::class, 'NoticeIndex'])->name('notice.index'); 
         Route::get('/notice/view',         [NoticeController::class, 'NoticeView'])->name('notice.view');
         Route::get('/notice/add',         [NoticeController::class, 'NoticeAdd'])->name('notice.add');
         Route::post('/notice/store',         [NoticeController::class, 'NoticeStore'])->name('store.notice');
         Route::get('/notice/edit/{id}',         [NoticeController::class, 'NoticeEdit'])->name('notice.edit');
         Route::get('/notice/single/{id}',         [NoticeController::class, 'NoticeEdit'])->name('notice.single');
         Route::post('/notice/update/{id}',         [NoticeController::class, 'NoticeUpdate'])->name('update.notice');
-        Route::get('/notice/delete/{id}',         [NoticeController::class, 'NoticeDetails'])->name('notice.delete');
+        Route::get('/notice/delete/{id}',         [NoticeController::class, 'NoticeDelete'])->name('notice.delete');
     });
 
 });
