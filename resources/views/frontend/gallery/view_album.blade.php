@@ -23,7 +23,7 @@
                             <div class=" m-4  " data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                 data-aos-duration="2000">
                                 {{-- {{$allData[$key]->image}} --}}
-                                <img id="showImage{{ $key }}" class="image" data-all="{{ json_encode($allData) }}"
+                                <img id="showImage{{ $key }}" class="image" data-all="{{ json_encode($allData,true) }}"
                                     data-key="{{ $key }}"
                                     data-previous="{{ $key - 1 < 0 ? count($allData) - 1 : $key - 1 }}"
                                     data-next="{{ $key + 1 >= count($allData) ? 0 : $key + 1 }}"

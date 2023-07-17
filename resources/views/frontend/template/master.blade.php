@@ -215,24 +215,27 @@
             });
         </script>
         <script>
+               let isChanging=false;
             $(document).ready(function() {
-                $("img").click(function(e) {
-
+             
+                $("img").click(function(e) { 
+                    if(isChanging){return}
+                    isChanging=true; 
                     var thisImgKey = $(this).attr('data-key');
-                    var all = $.parseJSON($(this).attr('data-all'));
-
+                    let thisData=$(this).attr('data-all');
+                    var all = JSON.parse(thisData); 
                     var url = "{{ asset('upload/gallery_images') }}";
-                    // console.log(url);
-                    var imgsrc = all[thisImgKey].image;
+                  
+                    var imgsrc = all[thisImgKey].image; 
                     url = url + '/' + imgsrc;
 
                     $("#ModalImage").attr('src', url);
                     // $("#ModalImage").attr('data-key', thisImgKey);
 
                     $("#previous").attr('data-key', thisImgKey - 1);
-                    $("#previous").attr('data-all', $(this).attr('data-all'));
+                    $("#previous").attr('data-all', JSON.stringify(thisData));
                     $("#next").attr('data-key', parseInt(thisImgKey) + 1);
-                    $("#next").attr('data-all', $(this).attr('data-all'));
+                    $("#next").attr('data-all', JSON.stringify(thisData));
                     if (thisImgKey == 0) {
                         if($("#previous").hasClass('active')){
                             $("#previous").removeClass('active');
@@ -251,12 +254,17 @@
                         if(!$("#next").hasClass('active')){
                             $("#next").addClass('active');
                         }
-                    }
-                    $("#imageModalCenter").show();
+                    } 
+                    $("#imageModalCenter").show(); 
+                   
                 });
-                $("#previous").click(function(e) {
+                $("#previous").click(function(e) { 
                     var thisImgKey = $(this).attr('data-key');
-                    var all = $.parseJSON($(this).attr('data-all'));
+                   
+                    let thisData=JSON.parse($(this).attr('data-all'));
+                    
+                    var all = JSON.parse(thisData);
+                    // console.log(all);
                     var imgsrc = all[thisImgKey].image;
                     var url = "{{ asset('upload/gallery_images') }}";
 
@@ -292,11 +300,15 @@
                         if(!$("#next").hasClass('active')){
                             $("#next").addClass('active');
                         }
-                    }
+                    } 
                 });
-                $("#next").click(function(e) {
+                $("#next").click(function(e) { 
                     var thisImgKey = $(this).attr('data-key');
-                    var all = $.parseJSON($(this).attr('data-all'));
+                    //console.log($(this).attr('data-all'));
+                    let thisData=JSON.parse($(this).attr('data-all'));
+                    
+                    var all = JSON.parse(thisData);
+                    // console.log(all);
                     var imgsrc = all[thisImgKey].image;
                     var url = "{{ asset('upload/gallery_images') }}";
 
@@ -333,7 +345,7 @@
                         if(!$("#next").hasClass('active')){
                             $("#next").addClass('active');
                         }
-                    }
+                    } 
                 });
             });
         </script>
