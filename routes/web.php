@@ -71,6 +71,14 @@ Route::get('/config-cache', function() {
     $exitCode = Artisan::call('config:cache');
     return '<h1>Clear Config cleared</h1>';
 });
+Route::get('/down', function() {
+    $exitCode = Artisan::call('down');
+    return '<h1>Site in maintainence</h1>';
+});
+Route::get('/up', function() {
+    $exitCode = Artisan::call('up');
+    return '<h1>Site in live</h1>';
+});
 
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', function () {return view('admin.index');})->name('dashboard');
