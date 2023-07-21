@@ -1435,7 +1435,7 @@ section.policy {
 }
 
 section.policy1 {
-    background-image: url(../images/qualitybg1.jpg);
+    /* background-image: url(../images/qualitybg1.jpg); */
     background-repeat: repeat-y;
     background-size: cover;
     background-blend-mode: multiply;
@@ -1654,7 +1654,7 @@ section.structural {
 }
 
 section.electrical {
-    background-image: url(../images/electricalbg.jpg);
+    /* background-image: url(../images/electricalbg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: soft-light;

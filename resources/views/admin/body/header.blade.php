@@ -14,12 +14,12 @@
 					<i class="nav-link-icon mdi mdi-crop-free"></i>
 			    </a>
 			</li>			
-			<li class="btn-group nav-item d-none d-xl-inline-block">
+			<li class="sr-only btn-group nav-item d-none d-xl-inline-block">
 				<a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
 					<i class="ti-check-box"></i>
 			    </a>
 			</li>
-			<li class="btn-group nav-item d-none d-xl-inline-block">
+			<li class="sr-only btn-group nav-item d-none d-xl-inline-block">
 				<a href="calendar.html" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
 					<i class="ti-calendar"></i>
 			    </a>
@@ -30,13 +30,13 @@
       <div class="navbar-custom-menu r-side">
         <ul class="nav navbar-nav">
 		  <!-- full Screen -->
-	      <li class="search-bar">		  
+	      {{-- <li class="sr-only search-bar">		  
 			  <div class="lookup lookup-circle lookup-right">
 			     <input type="text" name="s">
 			  </div>
-		  </li>			
+		  </li>			 --}}
 		  <!-- Notifications -->
-		  <li class="dropdown notifications-menu">
+		  <li class="sr-only dropdown notifications-menu">
 			<a href="#" class="waves-effect waves-light rounded dropdown-toggle" data-toggle="dropdown" title="Notifications">
 			  <i class="ti-bell"></i>
 			</a>
@@ -119,8 +119,8 @@
 			  </li>
 			</ul>
           </li>	
-		  <li>
-              <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light">
+		  <li class="">
+              <a href="#" data-toggle="control-sidebar" title="Setting" class="sr-only waves-effect waves-light">
 			  	<i class="ti-settings"></i>
 			  </a>
           </li>

@@ -24,14 +24,14 @@
         <!-- sidebar menu-->
         <ul class="sidebar-menu" data-widget="tree">
             @if ($usertype == 'admin')
-                <li class=" {{ $route == 'dashboard' ? 'active' : '' }}">
+                <li class= "sr-only {{ $route == 'dashboard' ? 'active' : '' }}">
                     <a href="{{ route('dashboard') }}">
                         <i data-feather="pie-chart"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
-                <li class="treeview {{ $prefix == '/users' ? 'active' : '' }}">
+                <li class="sr-only treeview {{ $prefix == '/users' ? 'active' : '' }}">
                     <a href="#">
                         <i data-feather="message-circle"></i>
                         <span>Manage User</span>
@@ -133,7 +133,7 @@
                     <li><a href="{{ route('student.result.view')}}"><i class="ti-more"></i>Student Result</a></li> --}}
                     </ul>
                 </li>
-                <li class="treeview {{ $prefix == '/gallery' ? 'active' : '' }}">
+                <li class="sr-only treeview {{ $prefix == '/gallery' ? 'active' : '' }}">
                     <a href="#">
                         <i data-feather="grid"></i>
                         <span>Gallery Management</span>
@@ -149,6 +149,7 @@
                     <li><a href="{{ route('student.result.view')}}"><i class="ti-more"></i>Student Result</a></li> --}}
                     </ul>
                 </li>
+                <li class="header nav-small-cap">Notice</li>
                 <li class="treeview {{ $prefix == '/notice' ? 'active' : '' }}">
                     <a href="#">
                         <i data-feather="grid"></i>
