@@ -61,7 +61,7 @@
                         <i class="fa fa-envelope mr-3"></i>info@rainbowinf.com
                     </li>
                     <li>
-                        <i class="fa fa-phone mr-3"></i> +91 82768119244
+                        <i class="fa fa-phone mr-3"></i> +91 8276819244
                     </li>
                     <!-- <li>
                         <i class="fa fa-print mr-3"></i> + 01 234 567 89
@@ -101,7 +101,7 @@
                         <i class="fa fa-youtube"></i>
                     </a>
                 </li>
-               
+
             </ul>
         </div>
 
