@@ -2,7 +2,7 @@
     $prefix = Request::route()->getPrefix();
     $route = Route::current()->getName();
     $usertype = auth()->user()->usertype;
-    
+
 @endphp
 {{-- @dd($prefix) --}}
 <aside class="main-sidebar">
@@ -133,7 +133,7 @@
                     <li><a href="{{ route('student.result.view')}}"><i class="ti-more"></i>Student Result</a></li> --}}
                     </ul>
                 </li>
-                <li class="sr-only treeview {{ $prefix == '/gallery' ? 'active' : '' }}">
+                <li class=" treeview {{ $prefix == '/gallery' ? 'active' : '' }}">
                     <a href="#">
                         <i data-feather="grid"></i>
                         <span>Gallery Management</span>
