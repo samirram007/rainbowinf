@@ -224,6 +224,16 @@
       //     </div>
       //   </div>"],
       [
+          'Section' => 'section-m5',
+          'HeaderImage' => 'frontend/assets/images/Anjan_Biswas.jpg',
+          'HeaderName' => 'Mr. Anjan Biswas',
+          'Designation' => 'General Manager Projects',
+          'Short-Description' => 'Mr Biswas completed his BE in mechanical from Bengal Engineering Collage in 1993. He is having more than 30 years of experience. He is also Certified Lead Auditor for ISO 9001. He was withMr Biswas completed his BE in mechanical from Bengal Engineering Collage in 1993. He is having more than 30 years of experience. He is also Certified Lead Auditor for ISO 9001. He was with...',
+          'Description' => 'Mr Biswas completed his BE in mechanical from Bengal Engineering Collage in 1993. He is having more than 30 years of experience. He is also Certified Lead Auditor for ISO 9001. He was with',
+
+          'Extra' => '',
+      ],
+      [
           'Section' => 'section-m6',
           'HeaderImage' => 'frontend/assets/images/debashis.jpg',
           'HeaderName' => 'Mr Debasish Chatterjee',
