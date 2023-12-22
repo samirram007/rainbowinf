@@ -1,6 +1,16 @@
   <!-- ***** Main Banner Area Start ***** -->
   <?php
   $collection = [
+    [
+          'Section' => 'section-m2',
+          'HeaderImage' => 'frontend/assets/images/Sabyasachi_Dutta.jpg',
+          'HeaderName' => 'Mr. Sabyasachi Dutta',
+          'Designation' => 'Dy. General Manager Projects',
+          'Short-Description' => 'Mr Dutta Completed his BE in Mining Engineering from IIEST, Shibpur in 2005. He is having more than 18 years of experience in Mining and Bulk Material Handing Projects with HINDALCO and Sandvik Asia Limited.',
+          'Description' => 'Mr Dutta Completed his BE in Mining Engineering from IIEST, Shibpur in 2005. He is having more than 18 years of experience in Mining and Bulk Material Handing Projects with HINDALCO and Sandvik Asia Limited.',
+
+          'Extra' => '',
+      ],
       [
           'Section' => 'section-m3',
           'HeaderImage' => 'assets/images/ABHIJIT_ROY_PHOTO.jpg',
@@ -72,13 +82,14 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 </div>	",
       ],
       [
-          'Section' => 'section-m4',
+          'Section' => 'section-m1',
           'HeaderImage' => 'frontend/assets/images/Sabyasachi_Dutta.jpg',
           'HeaderName' => 'Mr. Sabyasachi Dutta',
           'Designation' => 'Dy. General Manager Projects',
           'Short-Description' => 'Mr Dutta Completed his BE in Mining Engineering from IIEST, Shibpur in 2005. He is having more than 18 years of experience in Mining and Bulk Material Handing Projects with HINDALCO and Sandvik Asia Limited.',
           'Description' => 'Mr Dutta Completed his BE in Mining Engineering from IIEST, Shibpur in 2005. He is having more than 18 years of experience in Mining and Bulk Material Handing Projects with HINDALCO and Sandvik Asia Limited.',
-         'Extra' => ""
+
+          'Extra' => '',
       ],
       [
           'Section' => 'section-m2',
