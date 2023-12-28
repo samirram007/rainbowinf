@@ -10,7 +10,7 @@
             <!-- Grid column -->
             <div class="col-md-3 mx-auto mt-2">
                 <h6 class="text-uppercase mb-1 font-weight-bold">Company name</h6>
-                <p><a href="/">Rainbow Infrastructure Pvt. Ltd.</a></p>
+                <p><a href="/">{{env(' ORG_NAME') }}</a></p>
             </div>
             <!-- Grid column -->
 
@@ -52,16 +52,16 @@
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <ul>
                     <li>
-                        <i class="fa fa-home mr-3 "></i>Unit A3, Rishitech Park, <br>
-                          &nbsp &nbsp &nbsp &nbsp Street No.-360, Newtown, <br>
-                          &nbsp &nbsp &nbsp &nbsp Kolkata-700150, <br>
-                          &nbsp &nbsp &nbsp &nbsp West Bengal, India.
+                        <i class="fa fa-home mr-3 "></i>{{env(' ORG_ADDRESSLINE1') }} <br>
+                          &nbsp &nbsp &nbsp &nbsp {{env(' ORG_ADDRESSLINE2') }}, <br>
+                          &nbsp &nbsp &nbsp &nbsp {{env(' ORG_PIN') }} <br>
+                          &nbsp &nbsp &nbsp &nbsp {{env(' ORG_STATE_COUNTRY') }}
                     </li>
                     <li>
-                        <i class="fa fa-envelope mr-3"></i>info@rainbowinf.com
+                        <i class="fa fa-envelope mr-3"></i>{{env(' ORG_EMAIL') }}
                     </li>
                     <li>
-                        <i class="fa fa-phone mr-3"></i> +91 8276819244
+                        <i class="fa fa-phone mr-3"></i> {{env(' ORG_CONTACT') }}
                     </li>
                     <!-- <li>
                         <i class="fa fa-print mr-3"></i> + 01 234 567 89

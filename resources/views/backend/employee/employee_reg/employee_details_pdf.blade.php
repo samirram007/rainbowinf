@@ -33,17 +33,20 @@
 <body>
 
   <htmlpageheader name="page-header">
-   
+
   </htmlpageheader>
   <table id="pdf-table" >
     <tr>
-      <td width="50%">School Management ERP </td>
-      <td style="text-align:right;"><h2>Wish School</h2>
-      
-           <p>Address</p>
-          <p>Phone : 8240707689</p>
-          <p>Email : school@gmail.com</p>
-  
+      <td width="50%">{{ __('Employee Details') }} </td>
+      <td style="text-align:right;">  <h3>{{ env('ORG_NAME') }}</h3>
+
+        <p>{{ env('ORG_ADDRESSLINE1') }}</p>
+        <p>{{ env('ORG_ADDRESSLINE2') }}</p>
+        <p>{{ env('ORG_PIN') }}</p>
+        <p>{{ env('ORG_STATE_COUNTRY') }}</p>
+       <p>Phone : {{ env('ORG_CONTACT') }}</p>
+       <p>Email : {{ env('ORG_EMAIL') }}</p>
+
       </td>
     </tr>
   </table>
@@ -132,10 +135,10 @@
     <td>Salary</td>
     <td>{{$details->salary }} {{env('APP_CURRENCY')}}</td>
   </tr>
-   
-  
-  
-   
+
+
+
+
 </table>
 <br>
 

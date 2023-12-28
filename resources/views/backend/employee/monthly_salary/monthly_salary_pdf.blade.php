@@ -33,42 +33,46 @@
 <body>
 
   <htmlpageheader name="page-header">
-   
+
   </htmlpageheader>
   <table id="pdf-table" >
     <tr>
       <td width="50%">Employee Monthly Salary </td>
-      <td style="text-align:right;"><h2>Wish School</h2>
-      
-           <p>Address</p>
-          <p>Phone : 8240707689</p>
-          <p>Email : school@gmail.com</p>
-          
-  
+      <td style="text-align:right;">
+        <h2>{{ env('ORG_NAME') }}</h2>
+
+           <p>{{ env('ORG_ADDRESSLINE1') }}</p>
+           <p>{{ env('ORG_ADDRESSLINE2') }}</p>
+           <p>{{ env('ORG_PIN') }}</p>
+           <p>{{ env('ORG_STATE_COUNTRY') }}</p>
+          <p>Phone : {{ env('ORG_CONTACT') }}</p>
+          <p>Email : {{ env('ORG_EMAIL') }}</p>
+
+
       </td>
     </tr>
   </table>
   {{-- @dd($details) --}}
 
   @php
-     //$month = $month; 
+     //$month = $month;
         if ($month != '') {
             $where[] = ['date', 'like', $month . '%'];
         }
- 
+
             $totalAttend = App\Models\EmployeeAttendance::with(['user'])
                 ->where($where)
                 ->where('employee_id', $details[0]->employee_id)
                 ->get();
             $absentCount = count($totalAttend->where('attend_status', 'Absent'));
-             
+
 
             $salary=(double)$details[0]['user']['salary'];
             $salaryPerDay=(double)$salary/30;
             $totalSalaryMinus=(double)$absentCount*(double)$salaryPerDay;
             $totalSalary=(double)$salary-(double)$totalSalaryMinus;
-            
-        
+
+
   @endphp
 <table id="pdf-table" >
   <tr>
@@ -114,11 +118,11 @@
     <td> Salary This Month</td>
     <td>{{ $totalSalary }} {{env('APP_CURRENCY')}}</td>
   </tr>
- 
-   
-  
-  
-   
+
+
+
+
+
 </table>
 <br>
 
