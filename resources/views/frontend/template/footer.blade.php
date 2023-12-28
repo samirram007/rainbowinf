@@ -10,7 +10,7 @@
             <!-- Grid column -->
             <div class="col-md-3 mx-auto mt-2">
                 <h6 class="text-uppercase mb-1 font-weight-bold">Company name</h6>
-                <p><a href="/">{{env(' ORG_NAME') }}</a></p>
+                <p><a href="/">{{env('ORG_NAME') }}</a></p>
             </div>
             <!-- Grid column -->
 
