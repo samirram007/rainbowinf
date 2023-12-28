@@ -117,7 +117,7 @@
 
                 <li class="header nav-small-cap">News</li>
 
-                <li class="treeview {{ $prefix == '/news' ? 'active' : '' }}">
+                <li class="d-none treeview {{ $prefix == '/news' ? 'active' : '' }}">
                     <a href="#">
                         <i data-feather="grid"></i>
                         <span>News Management</span>
@@ -133,7 +133,7 @@
                     <li><a href="{{ route('student.result.view')}}"><i class="ti-more"></i>Student Result</a></li> --}}
                     </ul>
                 </li>
-                <li class=" treeview {{ $prefix == '/gallery' ? 'active' : '' }}">
+                <li class="d-none treeview {{ $prefix == '/gallery' ? 'active' : '' }}">
                     <a href="#">
                         <i data-feather="grid"></i>
                         <span>Gallery Management</span>
