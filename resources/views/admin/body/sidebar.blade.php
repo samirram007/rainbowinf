@@ -115,7 +115,7 @@
                 </li>
 
 
-                <li class="header nav-small-cap">News</li>
+                <li class="d-none header nav-small-cap">News</li>
 
                 <li class="d-none treeview {{ $prefix == '/news' ? 'active' : '' }}">
                     <a href="#">
