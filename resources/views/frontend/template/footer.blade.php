@@ -52,16 +52,16 @@
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <ul>
                     <li>
-                        <i class="fa fa-home mr-3 "></i>{{env(' ORG_ADDRESSLINE1') }} <br>
-                          &nbsp &nbsp &nbsp &nbsp {{env(' ORG_ADDRESSLINE2') }}, <br>
-                          &nbsp &nbsp &nbsp &nbsp {{env(' ORG_PIN') }} <br>
-                          &nbsp &nbsp &nbsp &nbsp {{env(' ORG_STATE_COUNTRY') }}
+                        <i class="fa fa-home mr-3 "></i>{{env('ORG_ADDRESSLINE1') }} <br>
+                          &nbsp &nbsp &nbsp &nbsp {{env('ORG_ADDRESSLINE2') }}, <br>
+                          &nbsp &nbsp &nbsp &nbsp {{env('ORG_PIN') }} <br>
+                          &nbsp &nbsp &nbsp &nbsp {{env('ORG_STATE_COUNTRY') }}
                     </li>
                     <li>
-                        <i class="fa fa-envelope mr-3"></i>{{env(' ORG_EMAIL') }}
+                        <i class="fa fa-envelope mr-3"></i>{{env('ORG_EMAIL') }}
                     </li>
                     <li>
-                        <i class="fa fa-phone mr-3"></i> {{env(' ORG_CONTACT') }}
+                        <i class="fa fa-phone mr-3"></i> {{env('ORG_CONTACT') }}
                     </li>
                     <!-- <li>
                         <i class="fa fa-print mr-3"></i> + 01 234 567 89
