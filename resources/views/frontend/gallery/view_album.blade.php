@@ -16,7 +16,7 @@
             </div>
             <div class="container ">
                 <div class="row  ">
-
+@dump($allData)
                     @forelse ($allData as $key=>$data)
 
                         <div class="col-md-6 col-lg-4 ">
@@ -92,7 +92,7 @@
 
         #imageModalCenter #ModalImage {
             height: 80vh;
-            max-width: 80% !important; 
+            max-width: 80% !important;
             border-radius: 5px;
             box-shadow: 0 0 20px 10px #222222b0;
         }

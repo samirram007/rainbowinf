@@ -20,10 +20,10 @@
                                         <thead>
                                             <tr>
                                                 <th width="5%">SL</th>
-                                                
-                                                <th>Name</th> 
-                                                <th>Details</th> 
-                                                <th width="10%">Image</th> 
+
+                                                <th>Name</th>
+                                                <th>Details</th>
+                                                <th width="10%">Image</th>
 
                                                 <th width="20%">Action</th>
 
@@ -32,16 +32,16 @@
                                         <tbody>
                                             @forelse ($allData as $key=>$data)
                                                 <tr>
-                                                    <td>{{ $key + 1 }}</td> 
-                                                    <td>{{ $data->name }}</td> 
-                                                    <td>{!! $data->details !!}</td> 
+                                                    <td>{{ $key + 1 }}</td>
+                                                    <td>{{ $data->name }}</td>
+                                                    <td>{!! $data->details !!}</td>
                                                     <td> <div class="form-group">
                                                         <div class="controls">
-                                                            <img id="showImage" style="width: 80px; height:80px border:1px solid #000000;" 
-                                                            src="{{ (!empty($data->image)? url('upload/gallery_images/'.$data->image) : url('upload/no_image.jpg') )}}" 
+                                                            <img id="showImage" style="width: 80px; height:80px border:1px solid #000000;"
+                                                            src="{{ (!empty($data->image)? url('upload/gallery_images/thumbnail/'.$data->image) : url('upload/no_image.jpg') )}}"
                                                              alt="">
                                                         </div>
-                                                    </div></td> 
+                                                    </div></td>
                                                     <td>
                                                         <a href="{{ route('album.view',$data->id)}}" class="btn btn-default"><i class="fa fa-desktop"></i></a>
                                                         <a href="{{ route('album.edit',$data->id)}}" class="btn btn-info"><i class="fa fa-edit"></i> </a>

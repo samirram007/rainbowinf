@@ -10,7 +10,7 @@
 
                         <div class="box">
                             <div class="box-header with-border">
-                               
+
                                 {{-- <h3 class="box-title">Album :: <span class="h4">  {{ $album->name }}</span></h3> --}}
                                 <nav aria-label="breadcrumb navbar-dark">
                                     <ol class="breadcrumb bg-transparent">
@@ -18,7 +18,7 @@
                                       <li class="breadcrumb-item active mx-2" aria-current="page"> / {{ $album->name }}</li>
                                     </ol>
                                   </nav>
-                                
+
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
@@ -41,8 +41,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
-                                            
+
+
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <h5>Image <span class="text-danger">*</span></h5>
@@ -63,8 +63,8 @@
                                             </div>
          <hr> <br>
                                             <div class="row mt-5 pt-5">
-                                               
-        
+
+
                                                 <div class="col-12">
                                                     <div class="text-xs-right">
                                                         <input type="submit" class="btn btn-rounded btn-info text-uppercase "
@@ -80,17 +80,17 @@
                                 <!-- /.row -->
                             </div>
 
-                            
+
                             <div class="box-body">
                                 <div class="table-responsive">
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th width="5%">SL</th>
-                                                
-                                                <th>Name</th> 
+
+                                                <th>Name</th>
                                                 {{-- <th>Details</th>  --}}
-                                                <th width="10%">Image</th> 
+                                                <th width="10%">Image</th>
 
                                                 <th width="10%">Action</th>
 
@@ -99,18 +99,18 @@
                                         <tbody>
                                             @forelse ($allData as $key=>$data)
                                                 <tr>
-                                                    <td>{{ $key + 1 }}</td> 
-                                                    <td>{{ $data->name }} </td> 
-                                                     
+                                                    <td>{{ $key + 1 }}</td>
+                                                    <td>{{ $data->name }} </td>
+
                                                     {{-- <td>{!! $data->details !!}</td>  --}}
                                                     <td> <div class="form-group">
                                                         <div class="controls">
-                                                            <img id="showImage" style="width: 80px; height:80px border:1px solid #000000;" 
-                                                            src="{{ (!empty($data->image)? url('upload/gallery_images/'.$data->image) : url('upload/no_image.jpg') )}}" 
+                                                            <img id="showImage" style="width: 80px; height:80px border:1px solid #000000;"
+                                                            src="{{ (!empty($data->image)? url('upload/gallery_images/thumbnail/'.$data->image) : url('upload/no_image.jpg') )}}"
                                                              alt=""  data-toggle="modal"
                                                              data-target="#exampleModalCenter">
                                                         </div>
-                                                    </div></td> 
+                                                    </div></td>
                                                     <td>
                                                         {{-- <a href="{{ route('image.view',$data->id)}}" class="btn btn-default"><i class="fa fa-desktop"></i></a> --}}
                                                         <a href="{{ route('image.edit',$data->id)}}" class="btn btn-info"><i class="fa fa-edit"></i> </a>
