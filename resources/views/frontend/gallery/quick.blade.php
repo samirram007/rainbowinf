@@ -7,7 +7,7 @@
             </div>
 
             <div class="col-md-12   d-flex flex-wrap">
-                @dump($gallery)
+
                 @foreach ($gallery as $key=> $album)
 
                 <div class="col-md-4  ">

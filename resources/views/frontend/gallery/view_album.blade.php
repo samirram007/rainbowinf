@@ -16,7 +16,7 @@
             </div>
             <div class="container ">
                 <div class="row  ">
-@dump($allData)
+
                     @forelse ($allData as $key=>$data)
 
                         <div class="col-md-6 col-lg-4 ">
