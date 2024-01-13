@@ -18,6 +18,7 @@
     {{-- @include('frontend.mission') --}}
     @include('frontend.gallery.quick')
     @include('frontend.newsroom')
+    @include('frontend.landing.clientele')
     @include('frontend.landing.contact')
 
 
