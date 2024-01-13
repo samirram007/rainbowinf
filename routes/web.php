@@ -2,10 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Request;
-use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\AdminController;
- 
+
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Frontend\HomeController;
@@ -22,21 +20,6 @@ use App\Http\Controllers\Backend\Employee\EmployeeSalaryController;
 use App\Http\Controllers\Backend\Employee\EmployeeAttendanceController;
 use App\Http\Controllers\Backend\Employee\EmployeeRegistrationController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-//Clear Cache facade value:
 Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('cache:clear');
     return '<h1>Cache facade value cleared</h1>';
@@ -201,7 +184,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/gallery/view',         [GalleryController::class, 'GalleryView'])->name('gallery.view');
         Route::get('/album/add',         [GalleryController::class, 'AlbumAdd'])->name('album.add');
         Route::post('/album/store',         [GalleryController::class, 'AlbumStore'])->name('store.album');
-         
+
         Route::get('/album/edit/{id}',         [GalleryController::class, 'AlbumEdit'])->name('album.edit');
         Route::post('/album/update/{id}',         [GalleryController::class, 'AlbumUpdate'])->name('update.album');
         Route::get('/album/view/{id}',         [GalleryController::class, 'AlbumView'])->name('album.view');
@@ -211,10 +194,10 @@ Route::group(['middleware' => 'auth'], function () {
          Route::get('/image/view/{id}',         [GalleryController::class, 'Imageview'])->name('image.view');
         Route::get('/gallery/delete/{id}',         [GalleryController::class, 'GalleryDelete'])->name('gallery.delete');
     });
-    
+
     Route::prefix('notice')->group(function () {
         //Notice Route
-        Route::get('/notice',         [NoticeController::class, 'NoticeIndex'])->name('notice.index'); 
+        Route::get('/notice',         [NoticeController::class, 'NoticeIndex'])->name('notice.index');
         Route::get('/notice/view',         [NoticeController::class, 'NoticeView'])->name('notice.view');
         Route::get('/notice/add',         [NoticeController::class, 'NoticeAdd'])->name('notice.add');
         Route::post('/notice/store',         [NoticeController::class, 'NoticeStore'])->name('store.notice');
@@ -227,7 +210,7 @@ Route::group(['middleware' => 'auth'], function () {
 });
 Route::get('/', [HomeController::class, 'index']);
 Route::prefix('frontend')->group(function () {
-    
+
     Route::get('/index', [HomeController::class, 'index']);
 
     Route::get('/list', function () {
@@ -238,7 +221,7 @@ Route::prefix('frontend')->group(function () {
         Route::get('/gallery/view',         [GalleryController::class, 'GalleryView'])->name('gallery.view');
         // Route::get('/album/add',         [GalleryController::class, 'AlbumAdd'])->name('album.add');
         // Route::post('/album/store',         [GalleryController::class, 'AlbumStore'])->name('store.album');
-         
+
         // Route::get('/album/edit/{id}',         [GalleryController::class, 'AlbumEdit'])->name('album.edit');
         // Route::post('/album/update/{id}',         [GalleryController::class, 'AlbumUpdate'])->name('update.album');
         Route::get('/album/view/{id}',         [GalleryController::class, 'FrontendAlbumView'])->name('frontend.view.album');
@@ -352,7 +335,7 @@ Route::prefix('frontend')->group(function () {
     //     return view('frontend.gallery');
     // })->name('gallery');
 
- 
+
     Route::get('/touroperations', function () {
         return view('frontend.touroperations');
     })->name('touroperations');
@@ -369,7 +352,7 @@ Route::prefix('frontend')->group(function () {
         return view('frontend.home');
     })->name('contact');
 
-  
+
 
     Route::get('/sr_vice_president_civil_architectural', function () {
         return view('frontend.sr_vice_president_civil_architectural');
@@ -412,7 +395,7 @@ Route::prefix('frontend')->group(function () {
     // });
     // Route::post('addnews', [NewsRoomController::class, 'create']);
 
-    Route::get('olddata', [OldDataController::class, 'index']);
+    // Route::get('olddata', [OldDataController::class, 'index']);
 
-    Route::get('oldpost', [OldDataController::class, 'oldpost'])->name('oldpost');
+    // Route::get('oldpost', [OldDataController::class, 'oldpost'])->name('oldpost');
 });
