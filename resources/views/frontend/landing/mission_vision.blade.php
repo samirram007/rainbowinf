@@ -1,13 +1,26 @@
+<style>
+    .font-480{
+        font-size: 5rem;
+        padding:2rem 4rem;
+        line-height:12rem;
+    }
+    @media(max-width:480px){
+        .font-480{
+            font-size:3rem!important;
+            padding:1rem 4rem;
+            line-height:3.5rem;
+        }
+    }
+</style>
 <section id="mission" class="section mission pb-2 pt-0 container-fluid">
 
     <div class="container" style="background-color: #09569e; padding:0;color:white">
         <!-- <h4 class="text-white"><em>Mission & Vision</em></h4> -->
 
         <div class="col-12 section-heading position-relative p-0">
-            <div class="    underline   position-absolute left-0 text-left "
-                style="font-size: 5rem;
-            padding:2rem 4rem;
-            line-height:12rem;
+            <div class=" font-480    underline   position-absolute left-0 text-left "
+                style="
+
             color:rgb(7, 7, 107);
                 font-weight:bold;
                 word-wrap:break-word">

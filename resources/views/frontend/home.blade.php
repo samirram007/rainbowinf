@@ -12,9 +12,10 @@
 
 
     @include('frontend.business')
-   @include('frontend.landing.message_from_cmd')
-    @include('frontend.management_team.quick')
+    @include('frontend.landing.message_from_cmd')
     @include('frontend.landing.mission_vision')
+    @include('frontend.management_team.quick')
+    @include('frontend.landing.timeline')
     {{-- @include('frontend.mission') --}}
     @include('frontend.gallery.quick')
     @include('frontend.newsroom')
