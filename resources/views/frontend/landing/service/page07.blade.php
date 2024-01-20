@@ -200,7 +200,7 @@
                             alt="">
                     </div>
                     <div class="header-block">
-                        <div class="header">ARCHITECTURAL/FINISHES - DIVISION</div>
+                        <div class="header">ARCHITECTURAL / FINISHES - DIVISION</div>
 
                         <div class="content">
                             <div>For Civil job, barring from Core & Shell structural work, we, diligently carry out
