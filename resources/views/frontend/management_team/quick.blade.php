@@ -228,9 +228,9 @@
                           <div class="author-header-image">
                               <img src="{{ asset($item['HeaderImage']) }}" alt="Course #2">
                           </div>
-                          <div class="down-content">
-                              <h4>{{ $item['HeaderName'] }}</h4>
-                              <p class="">{{ $item['Designation'] }}</p>
+                          <div class="down-content" style="overflow-x: hidden">
+                              <h5 style="white-space: normal">{{ $item['HeaderName'] }}</h5>
+                              <p style="white-space: nowrap" class="">{{ $item['Designation'] }}</p>
                               {{-- <p class="">{{  $item['Short-Description']  }}</p> --}}
                               <div class="foot">
                                   <div class="author-image">
@@ -264,9 +264,9 @@
                           <figure><img src="{{ asset($item['HeaderImage']) }}">
                               {{-- <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"></a> --}}
                           </figure>
-                          <div class="video-caption" style="padding: 10px 30px ">
+                          <div class="video-caption" style="padding: 10px 1px; overflow-x:scroll ">
                               {{-- <h4>Power HTML Template</h4> --}}
-                              <h4>{{ $item['HeaderName'] }}</h4>
+                              <h3 style="white-space:nowrap">{{ $item['HeaderName'] }}</h3>
                               <p>{{ $item['Designation'] }}</p>
                           </div>
 
