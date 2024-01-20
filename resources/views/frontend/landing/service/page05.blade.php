@@ -5,7 +5,7 @@
         line-height: 8rem;
     }
 
-    section.service .bg-image {
+    #servicepage_05.service .bg-image {
         width: 100%;
         height: 30rem;
         opacity: 0.3;
@@ -13,7 +13,7 @@
         /* position: absolute; */
     }
 
-    section.service {
+    #servicepage_05.service {
         background-color: #fbf5e8;
         padding: 120px 0px;
         width: 100%;
@@ -23,7 +23,7 @@
         background-size: cover;
     }
 
-    section.service .header-block {
+    #servicepage_05.service .header-block {
         padding: 10px;
         width: 80%;
         margin: 0 auto 10px;
@@ -33,25 +33,25 @@
 
     }
 
-    section.service .header-block .header {
+    #servicepage_05.service .header-block .header {
         font-size: 1.5rem;
         font-weight: bold;
         border-bottom: 2px solid #0d842366
     }
 
-    section.service .header-block .content {
+    #servicepage_05.service .header-block .content {
         padding: 5px 10px;
         font-size: 1rem !important;
         font-weight: normal;
     }
 
-    section.service .header-block .content ul {
+    #servicepage_05.service .header-block .content ul {
         list-style: none;
         padding-left: 10px;
         margin-top: 10px;
     }
 
-    section.service .header-block .content li {
+    #servicepage_05.service .header-block .content li {
         position: relative;
         padding-left: 1rem !important;
         /* space to preserve indentation on wrap */
@@ -59,7 +59,7 @@
         line-height: 1.8rem;
     }
 
-    section.service .header-block .content ul li:before {
+    #servicepage_05.service .header-block .content ul li:before {
         content: '✓';
         color: #4c8108;
         font-weight: bold;
@@ -140,9 +140,9 @@
             padding: 1rem 4rem;
             line-height: 3.5rem;
         }
-        section.service .bg-image {
+        #servicepage_05.service .bg-image {
         width: 100%;
-        height: 45rem;
+        height: 55rem;
         opacity: 0.3;
 
         /* position: absolute; */
