@@ -111,6 +111,7 @@ section.timeline {
 
         <h1>Timeline</h1>
         <img src="{{ asset('frontend/assets/images/six-dots.png') }}" style="width: 30px; height:40px;" alt="">
+
     </div>
 </div>
     <div id="timeline-container" class="container p-inline" style=" padding:0;color:rgb(101, 97, 97)">
