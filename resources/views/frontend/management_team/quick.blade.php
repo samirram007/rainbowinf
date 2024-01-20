@@ -229,7 +229,7 @@
                               <img src="{{ asset($item['HeaderImage']) }}" alt="Course #2">
                           </div>
                           <div class="down-content" style="overflow-x: hidden">
-                              <h5 style="white-space: normal">{{ $item['HeaderName'] }}</h5>
+                              <h6 style="white-space: normal">{{ $item['HeaderName'] }}</h6>
                               <small style="white-space: nowrap" class="">{{ $item['Designation'] }}</small>
                               {{-- <p class="">{{  $item['Short-Description']  }}</p> --}}
                               <div class="foot">
