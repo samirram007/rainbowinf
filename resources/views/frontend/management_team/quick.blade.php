@@ -230,7 +230,7 @@
                           </div>
                           <div class="down-content" style="overflow-x: hidden">
                               <h5 style="white-space: normal">{{ $item['HeaderName'] }}</h5>
-                              <p style="white-space: nowrap" class="">{{ $item['Designation'] }}</p>
+                              <small style="white-space: nowrap" class="">{{ $item['Designation'] }}</small>
                               {{-- <p class="">{{  $item['Short-Description']  }}</p> --}}
                               <div class="foot">
                                   <div class="author-image">
