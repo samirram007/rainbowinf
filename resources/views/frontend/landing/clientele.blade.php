@@ -1,3 +1,11 @@
+<style>
+    .md-nowrap{
+        white-space: pre-wrap
+    }
+    .md-nowrap{
+        white-space: nowrap;
+    }
+</style>
 <section id="clientele" style="background: #fff;" class="section mission  pb-2 pt-5 container-fluid">
 
     <div class="container" style=" padding:0; margin-bottom:20px ">
@@ -45,7 +53,7 @@
         </div>
         <div class="border-custom">
             <div class="h3 border-bottom border-primary mt-4">CIVIL - DIVISION</div>
-            <div class="image-container nowrap">
+            <div class="image-container md-nowrap">
                 <img src="{{ asset('frontend/assets/images/clients/eden_reality.png') }}" alt="">
                 <img src="{{ asset('frontend/assets/images/clients/wipro.png') }}" alt="">
 
@@ -66,7 +74,7 @@
         </div>
         <div class="border-custom">
             <div class="h3 border-bottom border-primary mt-4 ">INDUSTRIAL - DIVISION</div>
-            <div class="image-container nowrap">
+            <div class="image-container md-nowrap">
                 <img src="{{ asset('frontend/assets/images/clients/berger.png') }}" alt="">
                 <img src="{{ asset('frontend/assets/images/clients/voith.png') }}" alt="">
                 <img src="{{ asset('frontend/assets/images/clients/lt.png') }}" alt="">
