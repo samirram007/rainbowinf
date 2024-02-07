@@ -25,7 +25,11 @@ Route::get('/clear-cache', function() {
 
 Route::get('/optimize', function() {
     $exitCode = Artisan::call('optimize');
-    return '<h1>Reoptimized class loader</h1>';
+    return '<h1>Optimized class loader</h1>';
+});
+Route::get('/optimize_clear', function() {
+    $exitCode = Artisan::call('optimize:clear');
+    return '<h1>Optimized class loader</h1>';
 });
 
 //Route cache:
