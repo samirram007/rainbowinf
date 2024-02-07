@@ -2,9 +2,9 @@
 
     <div class="container caption">
         <div class=" head1 strong mx-auto mb-4" style="padding-top: 30px; ">
-            <div class="blockquote text-center">
+            <div class="blockquote text-center text-dark">
              <h3>Message From CMD</h3>
-                    <hr class="bg-light col-md-8 ">
+                    <hr class="bg-dark col-md-8 ">
 
             </div>
         </div>

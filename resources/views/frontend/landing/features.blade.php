@@ -5,26 +5,6 @@
                 <div class="features-post third-features">
                     <div class="features-content">
                         <div class="content-show">
-                            <h4><i class="fa fa-book"></i>Industrial</h4>
-                        </div>
-                        <div class="content-hide">
-                            <div class="rbn-image">
-                                <img src="{{ asset('frontend/assets/images/rbw_img/industrial.jpeg') }}" alt="industrial">
-                                <div class="scroll-to-section">
-                                    <!--a href="{{ route('industrial') }}"--><button type="button"
-                                        class="btn  btn-link text-light"
-                                        onclick="location.href = '{{ url(route('industrial')) }}'">Read More
-                                    </button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-2   px-1">
-                <div class="features-post third-features">
-                    <div class="features-content">
-                        <div class="content-show">
                             <h4><i class="fa fa-book"></i>Structural</h4>
                         </div>
                         <div class="content-hide">
@@ -42,6 +22,50 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-6 col-lg-2   px-1">
+                <div class="features-post third-features">
+                    <div class="features-content">
+                        <div class="content-show">
+                            <h4><i class="fa fa-book"></i>Civil</h4>
+                        </div>
+                        <div class="content-hide">
+                            <div class="rbn-image">
+                                <img src="{{ asset('frontend/assets/images/rbw_img/building.jpg') }}" alt="building">
+                                <div class="scroll-to-section">
+                                    <!--a href="{{route('building')}}">Read More</a-->
+                                    <button type="button" class="btn  btn-link text-light"
+                                        onclick="location.href = '{{ url(route('building')) }}'">Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-lg-2   px-1">
+                <div class="features-post third-features">
+                    <div class="features-content">
+                        <div class="content-show">
+                            <h4><i class="fa fa-book"></i>Industrial</h4>
+                        </div>
+                        <div class="content-hide">
+                            <div class="rbn-image">
+                                <img src="{{ asset('frontend/assets/images/rbw_img/industrial.jpeg') }}" alt="industrial">
+                                <div class="scroll-to-section">
+                                    <!--a href="{{ route('industrial') }}"--><button type="button"
+                                        class="btn  btn-link text-light"
+                                        onclick="location.href = '{{ url(route('industrial')) }}'">Read More
+                                    </button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-sm-6 col-lg-2   px-1">
                 <div class="features-post second-features">
                     <div class="features-content">
@@ -62,26 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-2   px-1">
-                <div class="features-post third-features">
-                    <div class="features-content">
-                        <div class="content-show">
-                            <h4><i class="fa fa-book"></i>Building</h4>
-                        </div>
-                        <div class="content-hide">
-                            <div class="rbn-image">
-                                <img src="{{ asset('frontend/assets/images/rbw_img/building.jpg') }}" alt="building">
-                                <div class="scroll-to-section">
-                                    <!--a href="{{route('building')}}">Read More</a-->
-                                    <button type="button" class="btn  btn-link text-light"
-                                        onclick="location.href = '{{ url(route('building')) }}'">Read More
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <div class="col-sm-6 col-lg-2  px-0">
                 <div class="features-post">
@@ -115,7 +120,7 @@
                                 <div class="scroll-to-section">
                                     <!--a href="{{route('civil_executive')}}" -->
                                     <button type="button" class="btn btn-link text-light"
-                                        onclick="location.href = '{{ url(route('civil_executive')) }}'">Read More
+                                        onclick="location.href = '{{ url(route('empty')) }}'">Read More
                                     </button></a>
                                 </div>
                             </div>

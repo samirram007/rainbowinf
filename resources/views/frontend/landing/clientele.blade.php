@@ -1,4 +1,4 @@
-<section id="clientele" style="background: #fff;" class="section mission  pb-2 pt-0 container-fluid">
+<section id="clientele" style="background: #fff;" class="section mission  pb-2 pt-5 container-fluid">
 
     <div class="container" style=" padding:0; margin-bottom:20px ">
         <div class="d-flex justify-content-between align-items-center pt-4">

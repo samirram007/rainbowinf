@@ -205,7 +205,7 @@ Route::group(['middleware' => 'auth'], function () {
     });
 
 });
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('empty');
 Route::prefix('frontend')->group(function () {
 
     Route::get('/index', [HomeController::class, 'index']);

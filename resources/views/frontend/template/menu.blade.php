@@ -101,7 +101,9 @@
                                     onclick="document.getElementById('close-sidebar').click();">Management Team </a>
                             </li>
 
-                            <li><a href="{{route('clients')}}">Clients</a></li>
+                            {{-- <li><a href="{{route('clients')}}">Clients</a></li> --}}
+                            <li><a href="{{ route('home',['#clientele']) }}"
+                               onclick="document.getElementById('close-sidebar').click();">Clients</a></li>
 
                             <li><a href="{{route('equipments')}}">Equipments</a></li>
 

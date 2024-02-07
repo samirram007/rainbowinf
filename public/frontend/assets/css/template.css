@@ -484,7 +484,7 @@ a.menu-link {
     margin: 0px 0.5rem 0px 3rem;
 }
 
- 
+
 .main-header {
     background-color: #0421379c;
     height: 80px;
@@ -1176,7 +1176,7 @@ section.gallery {
 
     min-height: 700px;
     height:100%;
-    /* background: url(../images/bgimg4.jpg); */
+    background: #fff;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1194,7 +1194,7 @@ section.gallery .item {
     height: 250px;
     margin: 10px 0;
     width:100%;
-   
+
 }
 
 section.gallery .item :hover {
@@ -1412,8 +1412,8 @@ section.video {
 section.cmd {
       /* background-image: url(../images/bg8.jpg); */
     /* color: #043653; */
-    color: #fffffff0;
-    
+    color: #ffffff93;
+    background: linear-gradient(75deg, #ffffffe2,#fff 30%) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: luminosity;
@@ -1448,7 +1448,7 @@ section.policy1 {
 section.mission {
 
     background-color: #fbf5e8;
-    
+
     padding: 120px 0px;
     width: 100%;
     background: url(../images/bg9.jpg);
@@ -1482,9 +1482,11 @@ section.gallery {
     background-size: cover;
     background-blend-mode: multiply; */
     border:none;
-    background-color: #7e736d36;
-     
-    
+    background-color: #ffffff;
+
+    /* background: url(https://rainbow.local/frontend/assets/images/vision.png); */
+
+
     padding: 120px 10px;
     zoom: 0%;
     /* width: calc(100% - 10px); */
@@ -1494,7 +1496,7 @@ section.news {
      background-image: url(../images/newsroom.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-blend-mode: multiply;  
+    background-blend-mode: multiply;
     background-color: #ffffffec;
     padding: 120px 0px;
     min-height: 100vh!important;
@@ -1554,7 +1556,7 @@ section.news {
 .card-container .docs-card .docs-footer {
     color: #f1550c;
     background-color: #e7ecf1;
-  
+
     padding: 10px;
     text-align: center;
     box-sizing: border-box;
@@ -2309,16 +2311,18 @@ screen and (max-height: 300px) {
 /* Contact */
 
 section.contact {
-    background-image: url(../images/contact-bg.png);
+    /* background-image: url(../images/contact-bg.png); */
+    background: #13192A;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #172238;
     padding-bottom: 120px;
-    
+
 }
 
 section.contact form {
     background-color: rgba(23, 38, 66, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 8px 2px #3faafc;
     padding: 30px;
     width: 100%;
 }

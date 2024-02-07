@@ -52,10 +52,18 @@
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <ul>
                     <li>
-                        <i class="fa fa-home mr-3 "></i>{{env('ORG_ADDRESSLINE1') }} <br>
+                        <i class="fa fa-home mr-3 "></i>
+                        {{-- {{env('ORG_ADDRESSLINE1') }} <br>
                           &nbsp &nbsp &nbsp &nbsp {{env('ORG_ADDRESSLINE2') }}, <br>
                           &nbsp &nbsp &nbsp &nbsp {{env('ORG_PIN') }} <br>
-                          &nbsp &nbsp &nbsp &nbsp {{env('ORG_STATE_COUNTRY') }}
+                          &nbsp &nbsp &nbsp &nbsp {{env('ORG_STATE_COUNTRY') }} --}}
+<pre class="text-white overflow-hidden text-sm">
+Unit No A3, Rishi Tech Park
+Plot No 02-360, Street No 360
+Action Area - ID, New Town
+(Behind TATA Memorial Cancer Hospital)
+Kolkata, West Bengal 700160, India
+</pre>
                     </li>
                     <li>
                         <i class="fa fa-envelope mr-3"></i>{{env('ORG_EMAIL') }}

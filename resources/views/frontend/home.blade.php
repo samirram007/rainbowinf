@@ -25,9 +25,10 @@
     @include('frontend.landing.service.page07')
     @include('frontend.landing.awards')
     {{-- @include('frontend.mission') --}}
+    @include('frontend.landing.clientele')
     @include('frontend.gallery.quick')
     @include('frontend.newsroom')
-    @include('frontend.landing.clientele')
+
     @include('frontend.landing.contact')
 
 
