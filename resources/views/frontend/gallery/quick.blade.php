@@ -181,12 +181,13 @@
         }
     }
 </style>
-<section id="gallery" class="section gallery  pb-5 container-fluid ">
+<section id="gallery" class="section gallery position-relative  pb-5 container-fluid ">
+    <img class="position-absolute bg-image w-100" src="{{ asset('frontend/assets/images/vision.png') }}" alt="">
     <div class="container " style="background-color: #ffffff; padding:0;color:rgb(49, 53, 58)">
         <!-- <h4 class="text-white"><em>Mission & Vision</em></h4> -->
         <div class=" border-top border-secondary">
             <div class=" position-relative d-flex flex-column justify-content-between align-items-center py-4 z-100">
-                <img class="position-absolute bg-image w-100" src="{{ asset('frontend/assets/images/vision.png') }}" alt="">
+
                 <div class=" w-100 d-flex flex-column justify-content-between align-items-center pt-4  "
                     style=" opacity:1">
                     <div class="w-100 d-flex justify-content-between align-items-center px-4">
