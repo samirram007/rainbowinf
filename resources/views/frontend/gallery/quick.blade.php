@@ -7,7 +7,7 @@
 
     #gallery.gallery .bg-image {
         width: 100%;
-        height: 30rem;
+        height: 140vh;
         opacity: 0.3;
 
         /* position: absolute; */
@@ -156,7 +156,7 @@
 
         #gallery.gallery .bg-image {
             width: 100%;
-            height: 45rem;
+            height: 80vh;
             opacity: 0.2;
 
             /* position: absolute; */
