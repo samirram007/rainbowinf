@@ -5,7 +5,11 @@
                 <div class="features-post third-features">
                     <div class="features-content">
                         <div class="content-show">
-                            <h4><i class="fa fa-book"></i>Structural</h4>
+
+                            <h4 class="d-flex flex-row gap-4 justify-start align-items-center">
+                                <img src="{{ asset('frontend/assets/images/rbw_img/structural_logo.png') }}" alt="">
+                                <span class="pl-2">Structural</span>
+                            </h4>
                         </div>
                         <div class="content-hide">
                             <div class="rbn-image">
@@ -27,7 +31,10 @@
                 <div class="features-post third-features">
                     <div class="features-content">
                         <div class="content-show">
-                            <h4><i class="fa fa-book"></i>Civil</h4>
+                            <h4 class="d-flex flex-row gap-4 justify-start align-items-center">
+                                <img src="{{ asset('frontend/assets/images/rbw_img/civil_logo.png') }}" alt="">
+                                <span class="pl-2">Civil</span>
+                            </h4>
                         </div>
                         <div class="content-hide">
                             <div class="rbn-image">
@@ -49,7 +56,11 @@
                 <div class="features-post third-features">
                     <div class="features-content">
                         <div class="content-show">
-                            <h4><i class="fa fa-book"></i>Industrial</h4>
+
+                            <h4 class="d-flex flex-row gap-4 justify-start align-items-center">
+                                <img src="{{ asset('frontend/assets/images/rbw_img/industrial_logo.png') }}" alt="">
+                                <span class="pl-2">Industrial</span>
+                            </h4>
                         </div>
                         <div class="content-hide">
                             <div class="rbn-image">
@@ -70,7 +81,11 @@
                 <div class="features-post second-features">
                     <div class="features-content">
                         <div class="content-show">
-                            <h4><i class="fa fa-graduation-cap"></i>Electrical</h4>
+
+                            <h4 class="d-flex flex-row gap-4 justify-start align-items-center">
+                                <img src="{{ asset('frontend/assets/images/rbw_img/electrical_logo.png') }}" alt="">
+                                <span class="pl-2">Electrical</span>
+                            </h4>
                         </div>
                         <div class="content-hide">
                             <div class="rbn-image">
@@ -92,7 +107,11 @@
                 <div class="features-post">
                     <div class="features-content">
                         <div class="content-show">
-                            <h4><i class="fa fa-pencil"></i>Architectural</h4>
+
+                            <h4 class="d-flex flex-row gap-4 justify-start align-items-center">
+                                <img src="{{ asset('frontend/assets/images/rbw_img/architectural_logo.png') }}" alt="">
+                                <span class="pl-2">Architectural</span>
+                            </h4>
                         </div>
                         <div class="content-hide">
                             <div class="rbn-image">
@@ -112,7 +131,11 @@
                 <div class="features-post">
                     <div class="features-content">
                         <div class="content-show">
-                            <h4><i class="fa fa-pencil"></i>Consultancy</h4>
+
+                            <h4 class="d-flex flex-row gap-4 justify-start align-items-center">
+                                <img src="{{ asset('frontend/assets/images/rbw_img/consultancy_logo.png') }}" alt="">
+                                <span class="pl-2">Consultancy</span>
+                            </h4>
                         </div>
                         <div class="content-hide">
                             <div class="rbn-image">

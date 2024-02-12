@@ -228,7 +228,7 @@ class GalleryController extends Controller
 
     public function FrontendAlbumView($id)
     {
-        $data['allData']=Gallery::with('album')->where('album_id',$id)->get();
+        $data['allData']=Gallery::with('album')->where('album_id',$id)->orderBy('updated_at','desc')->get();
         // dd($data['allData']);
         // $data['album']=Gallery::with('album')->where('album_id',$id)->first();
         // $data['album'] = Album::all();

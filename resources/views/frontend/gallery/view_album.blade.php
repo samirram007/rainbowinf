@@ -6,7 +6,7 @@
 
         <section class="section gallery " data-section="section5" id="section5">
             <div class="left-content" style="text-align:center;">
-                <a href="{{ route('home', ['#gallery']) }}" class="float-left  text-danger"> ◄- Back to main</a>
+                <a href="{{ route('home', ['#gallery']) }}" class="float-left  text-danger"> {{ __('◄- Back to main') }}</a>
                 <h5 class="mt-3  align-self-center">
                     {{-- {{ $album->name }} --}}
                 </h5>
