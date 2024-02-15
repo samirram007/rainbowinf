@@ -5,33 +5,33 @@
                 News Room
                 <hr>
             </div>
-            <div class="card-container  ">
- 
+
+        </div>
+        <div class="row card-container ">
                 @forelse ($news as $key=>$ns)
-                    <a class="docs-card bg-light" data-aos="fade-left flip-right" >
+                <div class="col-md-3 p-2">
+                    <a class=" docs-card bg-light " data-aos="fade-left flip-right">
 
-                        <section>
-                            @if($key<5)
-                            <strong class="latest" >Latest </strong>
-
+                        <section  >
+                            @if ($key < 5)
+                                <strong class="latest">Latest </strong>
                             @endif
                             {{ $ns->name }}
-                         
                         </section>
 
-                        <p class="base-color"> {!!$ns->details !!}</p>
-<div class="px-3   text-secondary"> <small> Published On: {{ date('d-M-Y H:i', strtotime($ns->published_at))}}</small></div>
+                        <p class="base-color main-news"> {!! $ns->details !!}</p>
+                        <div class="px-3   text-secondary"> <small> Published On:
+                                {{ date('d-M-Y H:i', strtotime($ns->published_at)) }}</small></div>
                         <div class="docs-footer">
                             see more
                         </div>
                     </a>
+                </div>
+
                 @empty
-no News Available
+                    no News Available
                 @endforelse
 
 
-
-            </div>
-        </div>
     </div>
 </section>

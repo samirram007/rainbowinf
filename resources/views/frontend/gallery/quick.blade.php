@@ -7,7 +7,7 @@
 
     #gallery.gallery .bg-image {
         width: 100%;
-        height: 140vh;
+        height: 100vh;
         opacity: 0.3;
 
         /* position: absolute; */

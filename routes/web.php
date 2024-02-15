@@ -212,7 +212,7 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/', [HomeController::class, 'index'])->name('empty');
 Route::prefix('frontend')->group(function () {
 
-    Route::get('/index', [HomeController::class, 'index']);
+    // Route::get('/index', [HomeController::class, 'index']);
 
     Route::get('/list', function () {
         return view('frontend.list');
@@ -232,11 +232,6 @@ Route::prefix('frontend')->group(function () {
          Route::get('/image/view/{id}',         [GalleryController::class, 'Imageview'])->name('image.view');
         // Route::get('/gallery/delete/{id}',         [GalleryController::class, 'GalleryDetails'])->name('gallery.delete');
     });
-    // Route::get('/album/{id}', [GalleryController::class, "FrontendAlbumView"])->name('frontend.view.album');
-
-    // Route::get('/dashboard', function () {
-    //     return view('frontend.dashboard');
-    // })->name('dashboard');
 
     Route::get('/cmd', [HomeController::class, 'cmd'])->name('cmd');
 
@@ -244,13 +239,6 @@ Route::prefix('frontend')->group(function () {
         return view('frontend.mission');
     })->name('mission');
 
-    // Route::get('/newsroom', function () {
-    //     return view('frontend.newsroom');
-    // })->name('newsroom');
-    // Route::resource('news', NewsController::class)
-    //     ->missing(function (Request $request) {
-    //         return Redirect::route('admin.news.list');
-    //     });;
 
     Route::get('/management_team', function () {
         return view('frontend.management_team');

@@ -217,16 +217,16 @@
         <script>
                let isChanging=false;
             $(document).ready(function() {
-             
-                $("img").click(function(e) { 
+
+                $("img").click(function(e) {
                     if(isChanging){return}
-                    isChanging=true; 
+                    isChanging=true;
                     var thisImgKey = $(this).attr('data-key');
                     let thisData=$(this).attr('data-all');
-                    var all = JSON.parse(thisData); 
+                    var all = JSON.parse(thisData);
                     var url = "{{ asset('upload/gallery_images') }}";
-                  
-                    var imgsrc = all[thisImgKey].image; 
+
+                    var imgsrc = all[thisImgKey].image;
                     url = url + '/' + imgsrc;
 
                     $("#ModalImage").attr('src', url);
@@ -254,15 +254,15 @@
                         if(!$("#next").hasClass('active')){
                             $("#next").addClass('active');
                         }
-                    } 
-                    $("#imageModalCenter").show(); 
-                   
+                    }
+                    $("#imageModalCenter").show();
+
                 });
-                $("#previous").click(function(e) { 
+                $("#previous").click(function(e) {
                     var thisImgKey = $(this).attr('data-key');
-                   
+
                     let thisData=JSON.parse($(this).attr('data-all'));
-                    
+
                     var all = JSON.parse(thisData);
                     // console.log(all);
                     var imgsrc = all[thisImgKey].image;
@@ -277,7 +277,7 @@
                     $("#previous").addClass('feedback');
                     if($("#ModalImage").hasClass('from_right')){
                         $("#ModalImage").removeClass('from_right');
-                    } 
+                    }
                     $("#ModalImage").addClass('from_right');
                     setTimeout(() => {
                         $("#previous").removeClass('feedback');
@@ -300,13 +300,13 @@
                         if(!$("#next").hasClass('active')){
                             $("#next").addClass('active');
                         }
-                    } 
+                    }
                 });
-                $("#next").click(function(e) { 
+                $("#next").click(function(e) {
                     var thisImgKey = $(this).attr('data-key');
                     //console.log($(this).attr('data-all'));
                     let thisData=JSON.parse($(this).attr('data-all'));
-                    
+
                     var all = JSON.parse(thisData);
                     // console.log(all);
                     var imgsrc = all[thisImgKey].image;
@@ -321,9 +321,9 @@
                     $("#next").addClass('feedback');
                     if($("#ModalImage").hasClass('from_left')){
                         $("#ModalImage").removeClass('from_left');
-                    } 
+                    }
                     $("#ModalImage").addClass('from_left');
-                    
+
                     setTimeout(() => {
                         $("#next").removeClass('feedback');
                         $("#ModalImage").removeClass('from_left');
@@ -345,7 +345,7 @@
                         if(!$("#next").hasClass('active')){
                             $("#next").addClass('active');
                         }
-                    } 
+                    }
                 });
             });
         </script>

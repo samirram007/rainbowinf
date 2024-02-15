@@ -1491,44 +1491,47 @@ section.gallery {
     zoom: 0%;
     /* width: calc(100% - 10px); */
 }
-
+section.news *{
+    box-sizing: border-box;
+}
 section.news {
      background-image: url(../images/newsroom.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-blend-mode: multiply;
     background-color: #ffffffec;
-    padding: 120px 0px;
+    padding: 120px 0;
     min-height: 100vh!important;
-    zoom: 0%;
-    /* wid
-    th: calc(100% - 10px); */
 }
+
 .card-container .docs-card section {
     color: #f3e8e3;
     background-color: #BA1813;
-    display: block;
- min-height: 80px;
- font-weight: 500;
-    font-size: 14px!important;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+    background:linear-gradient(75deg, #BA1813,#da3e3e 70%) ;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100px;
+    font-weight: 500;
+    font-size: 0.8rem!important;
+    /* line-height: 1rem; */
     margin: 0;
-    padding: 10px;
+
     text-transform: none;
     text-align: center;
     border: none;
     box-shadow:none;
+    padding: 5px;
 }
 .card-container .docs-card section  hr {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .card-container {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
     margin: 16px 0;
 
 }
@@ -1537,18 +1540,16 @@ section.news {
     text-decoration: none;
 }
 .card-container .docs-card {
-    width: 35%;
+
     border-radius: 4px;
     box-shadow: 0 2px 2px #0a10143d,0 0 2px #0a10141f;
     box-sizing: border-box;
     transition: box-shadow .5s;
-    max-width: 340px;
-    min-width: 300px;
-    margin: 24px 16px;
+    margin: 24px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px;
+    height: 350px;
     border:1px solid #666;
 
 }
