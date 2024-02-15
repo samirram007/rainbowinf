@@ -10,24 +10,21 @@
                 <h5 class="mt-3  align-self-center">
                     {{-- {{ $album->name }} --}}
                 </h5>
-
-
-
             </div>
             <div class="container ">
                 <div class="row  ">
 
                     @forelse ($allData as $key=>$data)
 
-                        <div class="col-md-6 col-lg-4 ">
-                            <div class=" m-4  " data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        <div class="col-md-6 col-lg-4 d-flex " style="gap:10px">
+                            <div class=" m-4  " style="width:100%; height:180px; overflow:hidden" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                 data-aos-duration="2000">
                                 {{-- {{$allData[$key]->image}} --}}
                                 <img id="showImage{{ $key }}" class="image thumb-image" data-all="{{ json_encode($allData,true) }}"
                                     data-key="{{ $key }}"
                                     data-previous="{{ $key - 1 < 0 ? count($allData) - 1 : $key - 1 }}"
                                     data-next="{{ $key + 1 >= count($allData) ? 0 : $key + 1 }}"
-                                    style=" border:1px solid #000000; width:100%; object-fit: cover;"
+                                    style=" border:1px solid #000000; width:100%; min-height:100%   "
                                     src="{{ !empty($allData[$key]->image) ? url('upload/gallery_images/thumbnail/' . $allData[$key]->image) : url('upload/no_image.jpg') }}"
                                     alt="" data-toggle="modal" data-target="#imageModalCenter">
 
