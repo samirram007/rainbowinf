@@ -23,7 +23,7 @@
                             <div class=" m-4  " data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                 data-aos-duration="2000">
                                 {{-- {{$allData[$key]->image}} --}}
-                                <img id="showImage{{ $key }}" class="image" data-all="{{ json_encode($allData,true) }}"
+                                <img id="showImage{{ $key }}" class="image thumb-image" data-all="{{ json_encode($allData,true) }}"
                                     data-key="{{ $key }}"
                                     data-previous="{{ $key - 1 < 0 ? count($allData) - 1 : $key - 1 }}"
                                     data-next="{{ $key + 1 >= count($allData) ? 0 : $key + 1 }}"
@@ -45,9 +45,9 @@
                 <div class="modal-content bg-transparent-custom w-100">
                     <div class="modal-footer modal-footer-custom bg-transparent">
                         {{-- previous and next image button --}}
-                        <div class="  text-light" id="previous"><img src="{{ asset('images/navigation-left.png') }}"
+                        <div class=" navigation-left text-light" id="previous"><img src="{{ asset('images/navigation-left.png') }}"
                                 alt=""></div>
-                        <div class=" text-light " id="next"><img src="{{ asset('images/navigation-right.png') }}"
+                        <div class=" navigation-right text-light " id="next"><img src="{{ asset('images/navigation-right.png') }}"
                                 alt=""></div>
 
 
@@ -95,6 +95,11 @@
             max-width: 80% !important;
             border-radius: 5px;
             box-shadow: 0 0 20px 10px #222222b0;
+        }
+        #imageModalCenter .navigation-left,
+        #imageModalCenter .navigation-right {
+            user-select: none
+
         }
         .from_left{
             animation: fromLeft 0.5s ease-in-out 1;
@@ -203,6 +208,145 @@
             }
         }
     </style>
+     <script>
+        let isChanging=false;
+     $(document).ready(function() {
+
+         $(".thumb-image").click(function(e) {
+             // console.log(e.target);
+             isChanging=false
+             if(isChanging){return}
+             isChanging=true;
+             var thisImgKey = $(this).attr('data-key');
+             let thisData=$(this).attr('data-all');
+             var all = JSON.parse(thisData);
+             var url = "{{ asset('upload/gallery_images') }}";
+
+             var imgsrc = all[thisImgKey].image;
+             url = url + '/' + imgsrc;
+
+             $("#ModalImage").attr('src', url);
+             // $("#ModalImage").attr('data-key', thisImgKey);
+
+             $("#previous").attr('data-key', thisImgKey - 1);
+             $("#previous").attr('data-all', JSON.stringify(thisData));
+             $("#next").attr('data-key', parseInt(thisImgKey) + 1);
+             $("#next").attr('data-all', JSON.stringify(thisData));
+             if (thisImgKey == 0) {
+                 if($("#previous").hasClass('active')){
+                     $("#previous").removeClass('active');
+                 }
+                // $("#previous").hide();
+             } else {
+                 if(!$("#previous").hasClass('active')){
+                     $("#previous").addClass('active');
+                 }
+             }
+             if (thisImgKey == all.length - 1) {
+                 if($("#next").hasClass('active')){
+                     $("#next").removeClass('active');
+                 }
+             } else {
+                 if(!$("#next").hasClass('active')){
+                     $("#next").addClass('active');
+                 }
+             }
+             $("#imageModalCenter").show();
+
+         });
+         $("#previous").click(function(e) {
+            isChanging=false
+             var thisImgKey = $(this).attr('data-key');
+
+             let thisData=JSON.parse($(this).attr('data-all'));
+
+             var all = JSON.parse(thisData);
+             // console.log(all);
+             var imgsrc = all[thisImgKey].image;
+             var url = "{{ asset('upload/gallery_images') }}";
+
+             var imgsrc = all[thisImgKey].image;
+             url = url + '/' + imgsrc;
+
+             $("#ModalImage").attr('src', url);
+             $("#previous").attr('data-key', thisImgKey - 1);
+             $("#next").attr('data-key', parseInt(thisImgKey) + 1);
+             $("#previous").addClass('feedback');
+             if($("#ModalImage").hasClass('from_right')){
+                 $("#ModalImage").removeClass('from_right');
+             }
+             $("#ModalImage").addClass('from_right');
+             setTimeout(() => {
+                 $("#previous").removeClass('feedback');
+                 $("#ModalImage").removeClass('from_right');
+             }, 500);
+             if (thisImgKey == 0) {
+                 if($("#previous").hasClass('active')){
+                     $("#previous").removeClass('active');
+                 }
+             } else {
+                 if(!$("#previous").hasClass('active')){
+                     $("#previous").addClass('active');
+                 }
+             }
+             if (thisImgKey == all.length - 1) {
+                 if($("#next").hasClass('active')){
+                     $("#next").removeClass('active');
+                 }
+             } else {
+                 if(!$("#next").hasClass('active')){
+                     $("#next").addClass('active');
+                 }
+             }
+         });
+         $("#next").click(function(e) {
+            isChanging=false
+             var thisImgKey = $(this).attr('data-key');
+             //console.log($(this).attr('data-all'));
+             let thisData=JSON.parse($(this).attr('data-all'));
+
+             var all = JSON.parse(thisData);
+             // console.log(all);
+             var imgsrc = all[thisImgKey].image;
+             var url = "{{ asset('upload/gallery_images') }}";
+
+             var imgsrc = all[thisImgKey].image;
+             url = url + '/' + imgsrc;
+
+             $("#ModalImage").attr('src', url);
+             $("#previous").attr('data-key', thisImgKey - 1);
+             $("#next").attr('data-key', parseInt(thisImgKey) + 1);
+             $("#next").addClass('feedback');
+             if($("#ModalImage").hasClass('from_left')){
+                 $("#ModalImage").removeClass('from_left');
+             }
+             $("#ModalImage").addClass('from_left');
+
+             setTimeout(() => {
+                 $("#next").removeClass('feedback');
+                 $("#ModalImage").removeClass('from_left');
+             }, 500);
+             if (thisImgKey == 0) {
+                 if($("#previous").hasClass('active')){
+                     $("#previous").removeClass('active');
+                 }
+             } else {
+                 if(!$("#previous").hasClass('active')){
+                     $("#previous").addClass('active');
+                 }
+             }
+             if (thisImgKey == all.length - 1) {
+                 if($("#next").hasClass('active')){
+                     $("#next").removeClass('active');
+                 }
+             } else {
+                 if(!$("#next").hasClass('active')){
+                     $("#next").addClass('active');
+                 }
+             }
+         });
+     });
+ </script>
     {{-- <script type="text/javascript">
         $(document).ready(function() {
             $('#image').change(function(e) {

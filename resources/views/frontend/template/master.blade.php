@@ -214,11 +214,12 @@
                 checkSection();
             });
         </script>
-        <script>
+        {{-- <script>
                let isChanging=false;
             $(document).ready(function() {
 
                 $("img").click(function(e) {
+                    // console.log(e.target);
                     if(isChanging){return}
                     isChanging=true;
                     var thisImgKey = $(this).attr('data-key');
@@ -348,7 +349,7 @@
                     }
                 });
             });
-        </script>
+        </script> --}}
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
