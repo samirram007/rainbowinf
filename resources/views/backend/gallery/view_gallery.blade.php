@@ -42,10 +42,10 @@
                                                              alt="">
                                                         </div>
                                                     </div></td>
-                                                    <td>
-                                                        <a href="{{ route('album.view',$data->id)}}" class="btn btn-default"><i class="fa fa-desktop"></i></a>
-                                                        <a href="{{ route('album.edit',$data->id)}}" class="btn btn-info"><i class="fa fa-edit"></i> </a>
-                                                        <a href="{{ route('gallery.delete',$data->id)}}" class="btn btn-danger delete" id="delete"><i class="fa fa-recycle"></i></a>
+                                                    <td class="d-flex flex-row flex-nowrap " style="gap: 3px">
+                                                        <a href="{{ route('album.view',$data->id)}}" title="View Album" class="btn btn-default"><i class="fa fa-desktop"></i></a>
+                                                        <a href="{{ route('album.edit',$data->id)}}" title="Edit Album" class="btn btn-info"><i class="fa fa-edit"></i> </a>
+                                                        <a href="{{ route('gallery.delete',$data->id)}}" title="Delete Album" class="btn btn-danger delete" id="delete"><i class="fa fa-recycle"></i></a>
                                                     </td>
                                                 </tr>
                                             @empty

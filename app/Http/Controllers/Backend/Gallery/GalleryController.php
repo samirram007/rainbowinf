@@ -42,7 +42,7 @@ class GalleryController extends Controller
 
             $thumbnailPath = public_path('/upload/gallery_images/thumbnail/'. $filename);
             //dd($thumbnailPath);
-            $img = Image::make($file->path())->resize(100,100, function($constraint){
+            $img = Image::make($file->path())->resize(200,200, function($constraint){
                 $constraint->aspectRatio();
             });
             $img->save($thumbnailPath);
@@ -86,7 +86,7 @@ class GalleryController extends Controller
             $filename = date('YmdHi') . $file->getClientOriginalName();
             $thumbnailPath = public_path('/upload/gallery_images/thumbnail/'. $filename);
 
-            $img = Image::make($file->path())->resize(100,100, function($constraint){
+            $img = Image::make($file->path())->resize(200,200, function($constraint){
                 $constraint->aspectRatio();
             });
             $img->save($thumbnailPath);
@@ -126,7 +126,7 @@ class GalleryController extends Controller
             $filename = date('YmdHi') . $file->getClientOriginalName();
             $thumbnailPath = public_path('/upload/gallery_images/thumbnail/'. $filename);
             //dd($thumbnailPath);
-            $img = Image::make($file->path())->resize(100,100, function($constraint){
+            $img = Image::make($file->path())->resize(200,200, function($constraint){
                 $constraint->aspectRatio();
             });
             $img->save($thumbnailPath);
@@ -168,7 +168,7 @@ class GalleryController extends Controller
             $filename = date('YmdHi') . $file->getClientOriginalName();
             $thumbnailPath = public_path('/upload/gallery_images/thumbnail/'. $filename);
 
-            $img = Image::make($file->path())->resize(100,100, function($constraint){
+            $img = Image::make($file->path())->resize(200,200, function($constraint){
                 $constraint->aspectRatio();
             });
             $img->save($thumbnailPath);
