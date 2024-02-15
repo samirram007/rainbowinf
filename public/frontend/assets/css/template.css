@@ -1511,7 +1511,7 @@ section.news {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    min-height: 100px;
+    min-height: 120px;
     font-weight: 500;
     font-size: 0.8rem!important;
     /* line-height: 1rem; */
