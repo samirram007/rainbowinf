@@ -191,6 +191,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/album/view/{id}',         [GalleryController::class, 'AlbumView'])->name('album.view');
          Route::post('/gallery/store/{id}',         [GalleryController::class, 'GalleryStore'])->name('store.gallery');
          Route::get('/image/edit/{id}',         [GalleryController::class, 'ImageEdit'])->name('image.edit');
+         Route::get('/image/delete/{id}',         [GalleryController::class, 'ImageDelete'])->name('image.delete');
          Route::post('/image/update/{id}',         [GalleryController::class, 'ImageUpdate'])->name('update.image');
          Route::get('/image/view/{id}',         [GalleryController::class, 'Imageview'])->name('image.view');
         Route::get('/gallery/delete/{id}',         [GalleryController::class, 'GalleryDelete'])->name('gallery.delete');

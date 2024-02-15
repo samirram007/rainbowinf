@@ -111,10 +111,10 @@
                                                              data-target="#exampleModalCenter">
                                                         </div>
                                                     </div></td>
-                                                    <td>
+                                                    <td  class="d-flex flex-row flex-nowrap " style="gap: 3px">
                                                         {{-- <a href="{{ route('image.view',$data->id)}}" class="btn btn-default"><i class="fa fa-desktop"></i></a> --}}
                                                         <a href="{{ route('image.edit',$data->id)}}" class="btn btn-info"><i class="fa fa-edit"></i> </a>
-                                                        {{-- <a href="{{ route('image.delete',$data->id)}}" class="btn btn-danger" id="delete"><i class="fa fa-recycle"></i></a> --}}
+                                                        <a href="{{ route('image.delete',$data->id)}}" class="btn btn-danger" id="delete"><i class="fa fa-recycle"></i></a>
                                                     </td>
                                                 </tr>
                                             @empty
