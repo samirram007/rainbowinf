@@ -175,7 +175,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/news/add',         [NewsController::class, 'NewsAdd'])->name('news.add');
         Route::post('/news/store',         [NewsController::class, 'NewsStore'])->name('store.news');
         Route::get('/news/edit/{id}',         [NewsController::class, 'NewsEdit'])->name('news.edit');
-        Route::get('/news/single/{id}',         [NewsController::class, 'NewsEdit'])->name('news.single');
+        Route::get('/frontend/news/single/{id}',         [NewsController::class, 'NewsSingle'])->name('news.single');
         Route::post('/news/update/{id}',         [NewsController::class, 'NewsUpdate'])->name('update.news');
         Route::get('/news/delete/{id}',         [NewsController::class, 'NewsDelete'])->name('news.delete');
     });

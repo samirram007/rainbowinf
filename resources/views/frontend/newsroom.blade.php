@@ -8,11 +8,11 @@
 
         </div>
         <div class="row card-container ">
-                @forelse ($news as $key=>$ns)
+            @forelse ($news as $key=>$ns)
                 <div class="col-md-3 p-2">
-                    <a class=" docs-card bg-light " data-aos="fade-left flip-right">
+                    <div class=" docs-card bg-light " data-aos="fade-left flip-right">
 
-                        <section  >
+                        <section>
                             @if ($key < 5)
                                 <strong class="latest">Latest </strong>
                             @endif
@@ -23,15 +23,16 @@
                         <div class="px-3   text-secondary"> <small> Published On:
                                 {{ date('d-M-Y H:i', strtotime($ns->published_at)) }}</small></div>
                         <div class="docs-footer">
-                            see more
+
+                            <a class="btn btn-link btn-small" href="{{ route('news.single', $ns->id) }}">see more</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
-                @empty
-                    no News Available
-                @endforelse
+            @empty
+                no News Available
+            @endforelse
 
 
-    </div>
+        </div>
 </section>

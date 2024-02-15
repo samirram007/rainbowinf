@@ -4,7 +4,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <div id="main" class="scroll-container container">
 
-        <section class="section gallery " data-section="section5" id="section5">
+        <section class="section gallery d-flex flex-column " data-section="section5" id="section5">
             <div class="left-content" style="text-align:center;">
                 <a href="{{ route('home', ['#gallery']) }}" class="float-left  text-danger"> {{ __('◄- Back to main') }}</a>
                 <h5 class="mt-3  align-self-center">

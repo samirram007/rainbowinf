@@ -3,7 +3,8 @@
 
         @foreach ($news as $ns)
             <span onclick="rad('news',1,7);">
-                <div class="OrangeBall"></div><span class="new"> </span>&nbsp;&nbsp;{{ $ns->name }}
+                <div class="OrangeBall"></div><span class="new"> </span>&nbsp;&nbsp;
+                <a href="{{route('news.single', $ns->id)}}">{{ $ns->name }}</a>
             </span>
         @endforeach
     </marquee>

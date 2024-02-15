@@ -19,6 +19,13 @@ class NewsController extends Controller
         $data['allData'] = News::all();
         return view('backend.news.view_news', $data);
     }
+    public function NewsSingle($id)
+    {
+        $data['allData'] = News::all();
+        $data['viewData'] = News::find($id);
+        return view('frontend.news.view_news', $data);
+    }
+
     public function NewsAdd()
     {
         $data['allData'] = News::all();
