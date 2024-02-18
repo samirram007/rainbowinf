@@ -119,8 +119,8 @@
                                 <div class="scroll-to-section">
                                     <!--a href="{{route('civil_executive')}}" -->
                                     <button type="button" class=" btn btn-link text-light"
-                                        onclick="location.href = '{{ url(route('architectural')) }}'">Read More
-                                    </button></a>
+                                        onclick="location.href = '{{ url(route('empty')) }}'">Read More
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                     <!--a href="{{route('civil_executive')}}" -->
                                     <button type="button" class="btn btn-link text-light"
                                         onclick="location.href = '{{ url(route('empty')) }}'">Read More
-                                    </button></a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
