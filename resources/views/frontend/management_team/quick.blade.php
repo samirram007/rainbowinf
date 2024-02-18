@@ -10,7 +10,7 @@
       #management.management .bg-image {
           width: 100%;
           height: 80vh;
-          opacity: 0.3;
+          opacity: 0.1;
 
           /* position: absolute; */
       }
