@@ -1,8 +1,23 @@
 <section class="section main-banner" id="section1" data-section="section1">
-    <video autoplay muted loop id="bg-video">
+    <video  autoplay muted loop id="bg-video" >
         <source src="{{ asset('frontend/assets/images/bg.mp4') }}" type="video/mp4" />
     </video>
+    <style>
+        #bg-video{
 
+        }
+    </style>
+    <script>
+        let vid = document.getElementById("bg-video");
+        vid.playbackRate = 0.5;
+        // function getPlaySpeed() {
+        //   alert(vid.playbackRate);
+        // }
+
+        // function setPlaySpeed() {
+        //   vid.playbackRate = 0.5;
+        // }
+        </script>
     <div class="video-overlay header-text">
         <div class="caption">
             {{-- <h6>Executive Summary</h6> --}}

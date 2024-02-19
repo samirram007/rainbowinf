@@ -167,14 +167,14 @@ text-decoration-color: burlywood;
 
 .onhover {
     font-weight: 700;
-    color: rgba(247, 199, 127, 0.87);
+    color: rgba(46, 45, 44, 0.87);
     text-decoration: none;
     transition: color 0.5s ease-out;
 
 }
 
 .onhover:hover {
-    color: rgb(243, 224, 197);
+    color: rgb(20, 20, 19);
     text-decoration: none;
 
 }
@@ -1412,7 +1412,6 @@ section.video {
 section.cmd {
       /* background-image: url(../images/bg8.jpg); */
     /* color: #043653; */
-    color: #ffffff93;
     background: linear-gradient(75deg, #ffffffe2,#fff 30%) ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1646,22 +1645,29 @@ section.factory {
 }
 
 section.structural {
-    /* background-image: url(../images/bgimg1.jpg); */
+
+    background: white;
+    background-image: url(../images/vision_bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     /* background-blend-mode: multiply; */
-    background-color: #0f1a2e8a;
+    background-color: #b8b2b250;
+    color: #0b0b0b  ;
     padding: 120px 0px;
     width: 100%;
+
     /* width: calc(100% - 10px); */
 }
 
 section.electrical {
     /* background-image: url(../images/electricalbg.jpg); */
+    background: white;
+    background-image: url(../images/vision_bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: soft-light;
-    background-color: #2b2f368a;
+    background-size: contain;
+    /* background-blend-mode: multiply; */
+    background-color: #b8b2b250;
+    color: #0b0b0b  ;
     padding: 120px 0px;
     width: 100%;
     /* width: calc(100% - 10px); */
@@ -1679,12 +1685,14 @@ section.clients {
 }
 
 section.corporate_office {
-    /* background-image: url(../images/bgimg4.jpg); */
+    background: white;
+    background-image: url(../images/vision_bg.png);
     background-repeat: no-repeat;
-    background-blend-mode: saturation;
     background-size: cover;
-    background-color: #2b2f368a;
-    padding: 120px px;
+    /* background-blend-mode: multiply; */
+    background-color: #b8b2b21c;
+    color: #0b0b0b  ;
+    padding: 20px 0;
     width: 100%;
     /* width: calc(100% - 20px); */
 }
@@ -1694,7 +1702,7 @@ section.business {
     background-repeat: no-repeat;
     background-blend-mode:color-burn;
     background-size: cover;
-    background-color: #f4f0ed;
+    background-color: #f4f0ed00;
     padding: 120px px;
     width: 100%;
     /* width: calc(100% - 20px); */

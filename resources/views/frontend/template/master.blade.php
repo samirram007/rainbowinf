@@ -25,7 +25,7 @@
     {{-- <link  rel="stylesheet"   href="{{ asset('frontend/assets/css/full-page-scroll.css') }}" > --}}
     <style>
         .bg-dots-light{
-            background-image: url({{ asset('frontend/assets/images/dotted-bg-dark.png') }});
+            background-image: url({{ asset('frontend/assets/images/dotted-bg-light.png') }});
 
         }
     </style>
@@ -42,7 +42,6 @@
             <div class="logo">
                 <a href="/"><em>RAINBOW</em>
                     <div>Infrastructure Pvt. Ltd.</div>
-
                 </a>
             </div>
 
@@ -215,7 +214,7 @@
             });
         </script>
         {{-- <script>
-               let isChanging=false;
+            let isChanging=false;
             $(document).ready(function() {
 
                 $("img").click(function(e) {

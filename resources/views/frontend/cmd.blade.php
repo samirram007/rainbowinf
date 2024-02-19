@@ -3,7 +3,7 @@
 @section('content')
     <!-- ***** Main Banner Area Start ***** -->
 
-    <div id="main" class="scroll-container text-white ">
+    <div id="main" class="scroll-container  ">
 
         <section class="section cmd " data-section="cmd" id="cmd">
             <div class="container-fluid px-3">
@@ -14,7 +14,7 @@
                         <div class="col-md-6 col-lg-8  mt-0  ">
 
                             <!-- <span>our presentation is for you</span> -->
-                            <h5 class="mb-2 pb-1 pl-3" style="border-left:5px solid rgba(20,200,210,0.8);">
+                            <h5 class="mb-2 pb-1 pl-3 " style="border-left:5px solid rgba(20,200,210,0.8);">
                                 From the desk of <span class="mt-0">CMD</span>
                                 <hr>
                             </h5>

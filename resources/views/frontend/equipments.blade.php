@@ -6,14 +6,14 @@
             <a href="/" class="px-4">Back to Home</a>
             <div class="caption ">
                 <div class="col-12 section-heading">
-                    <div class=" head1 h2 text-light">
+                    <div class=" head1 h2 text-dark font-weight-bold">
                         EQUIPMENT LIST
                     </div>
 
                     <div class="caption-list" style="text-align:justify; color:blanchedalmond; ">
 
 
-                        <div class="     text-light rounded p-2 my-2">
+                        <div class=" bg-warning shadow     text-dark rounded p-4 my-2 font-weight-bold">
                             "Over the years, Rainbow Infrastructure Pvt Ltd has invested good money to build up equipment
                             and machineries for catering various project work. Detail list of equipment are as below:-
                             "</div>
