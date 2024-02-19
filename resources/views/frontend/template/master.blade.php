@@ -24,7 +24,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {{-- <link  rel="stylesheet"   href="{{ asset('frontend/assets/css/full-page-scroll.css') }}" > --}}
     <style>
-        .bg-dots-light{
+        .bg-dots-light {
             background-image: url({{ asset('frontend/assets/images/dotted-bg-light.png') }});
 
         }

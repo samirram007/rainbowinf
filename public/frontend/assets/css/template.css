@@ -1426,19 +1426,41 @@ section.policy {
     background-image: url(../images/quality_bg.jpg);
     background-repeat: repeat-y;
     background-size: cover;
-    background-blend-mode: lighten;
-    background-color: #2b2f368a;
+    background: white;
+    background-image: url(../images/vision_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    background-color: #b8b2b21c;
+    color: #0b0b0b  ;
+    padding: 120px 0px;
+    width: 100%;
+    /* width: calc(100% - 10px); */
+}
+section.registration {
+    background-image: url(../images/quality_bg.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background: white;
+    background-image: url(../images/vision_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    background-color: #b8b2b21c;
+    color: #0b0b0b  ;
     padding: 120px 0px;
     width: 100%;
     /* width: calc(100% - 10px); */
 }
 
 section.policy1 {
-    /* background-image: url(../images/qualitybg1.jpg); */
-    background-repeat: repeat-y;
+    background: white;
+    background-image: url(../images/vision_bg.png);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: multiply;
-    background-color: #2b2f368a;
+    /* background-blend-mode: multiply; */
+    background-color: #b8b2b21c;
+    color: #0b0b0b  ;
     padding: 120px 0px;
     /* width:100%; */
     width: calc(100% - 10px);
@@ -1725,7 +1747,7 @@ section.clients i {
 }
 
 section.policy .custom-list {
-    background-color: #d1d6df54;
+    /* background-color: #d1d6df54; */
 }
 section.mission .custom-list {
     background-color: #576b583b;

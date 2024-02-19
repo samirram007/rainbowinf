@@ -1,17 +1,30 @@
 @extends('frontend.template.master')
 
 @section('content')
+<style>
+    .box-block {
+      padding: 10px;
+      width: 80%;
+      margin: 10px auto 20px;
+      background: rgba(243, 242, 242, 0.96);
+      border-radius: 10px;
+      box-shadow: 0 0 3px 2px #1797f884;
 
+  }
+  .box-block i{
+      color:#e43f0d;
+  }
+</style>
 <section id="safety_policy" class="section policy ">
     <div id="main" class=" container">
         <div class="caption ">
             <div class="col-12 section-heading">
-                <div class=" head1 h2 text-light">
+                <div class=" head1 h2 text-dark">
                     Safety Policy
                 </div>
             </div>
 
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover" style="font-size:13px;">Human is the most precious creature of God in this
                     universe.
                     Rainbow Infrastructure Pvt. Ltd. is committed to protect this precious creature of God
@@ -20,7 +33,7 @@
                     among all our Workmen, Staff and Associates.
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
 
                     SITE SAFETY PLAN
@@ -50,7 +63,7 @@
                     Monitoring and Reporting.
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover" style="font-size:15px;">
                     PEP TALK
                 </div>
@@ -68,7 +81,7 @@
                     Prepare them for being cautious on the associated risks to take adequate precautions.
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover" style="font-size:15px;">
                     SAFETY INDUCTION TRAINING TOPIC
                 </div>
@@ -113,7 +126,7 @@
                     Company Rule about PPE Issuance
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
                     Site Layout/Emergency/Assembly Point/Escape Route
                 </div>
@@ -127,7 +140,7 @@
 
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
                     How We Can Control Safety at Project Site
                 </div>
@@ -144,7 +157,7 @@
                     By making them to understand the benefit of implementation of Safety into their day to day work.
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
                     Emergency Response Procedure/Telephone No
                 </div>
@@ -163,7 +176,7 @@
                     By showing them the Location of Medical Centre / First Aid Centre.
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
                     Company Rule About PPE Issuing
                 </div>
@@ -178,7 +191,7 @@
                 <p>Example : In case of Health Hazard area, usage of Mask is mandatory
                     wherein for work in height in open area too the requirement of Safety Belt is mandatory</p>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
                     How Accident Happens/Definition of Unsafe Act
                 </div>
@@ -201,7 +214,7 @@
                     fatal accident can taken place.
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
                     Accident/Incident/Near Miss Reporting
                 </div>
@@ -219,7 +232,7 @@
                     case of similar accident.
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
                     Disciplinary Action Against Violators And Safety Award
                 </div>
@@ -239,7 +252,7 @@
                     implementation of Monthly Safety award may improve upon the Safety Standard
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
                 <div class="onhover " style="font-size:15px;">
                     First Aid Clinic/Hospital Location And Telephone No
                 </div>

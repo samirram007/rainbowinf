@@ -1,17 +1,30 @@
 @extends('frontend.template.master')
 
 @section('content')
+<style>
+    .box-block {
+      padding: 10px;
+      width: 80%;
+      margin: 10px auto 20px;
+      background: rgba(243, 242, 242, 0.96);
+      border-radius: 10px;
+      box-shadow: 0 0 3px 2px #1797f884;
 
+  }
+  .box-block i{
+      color:#e43f0d;
+  }
+</style>
 <section id="quality_policy" class="section policy1 ">
     <div id="main" class="scroll-container container">
 
         <div class="caption">
             <div class="col-12 section-heading">
-                <div class=" head1 h2 text-light">
+                <div class=" head1 h2 text-dark">
                     Quality Policy
                 </div>
             </div>
-            <div class="custom-list text-white">
+            <div class="custom-list box-block">
 
 
                 <div class="onhover">
