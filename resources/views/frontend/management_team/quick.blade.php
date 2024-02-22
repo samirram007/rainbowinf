@@ -236,7 +236,7 @@
       [
           'Section' => 'section-m4',
           'HeaderImage' => 'frontend/assets/images/Kaushik_Bhattacharya.jpg',
-          'HeaderName' => 'Mr. Kaushik Bhattacharya',
+          'HeaderName' => 'Dr. Kaushik Bhattacharya',
           'Designation' => 'Chief Executive Officer',
           'Short-Description' => 'Mr. Bhattacharya completed his B.E. from Bengal Engineering College in 1991 . He is having more than 30 years of experience handling EPC Contracts by way of serving different Corporate Companies at various positions. He was with',
           'Description' => 'Mr. Bhattacharya completed his B.E. from Bengal Engineering College in 1991 . He is having more than 30 years of experience handling EPC Contracts by way of serving different Corporate Companies at various positions. He was with',
